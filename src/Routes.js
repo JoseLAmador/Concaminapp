@@ -4,7 +4,8 @@ import {Router, Scene} from 'react-native-router-flux';
 import Login from "./components/login/Login";
 import Log from "./components/login/Log";
 import Recover from "./components/login/Recover";
-
+import Principal from "./components/principal/Principal";
+import Grupos from "./components/principal/Grupos";
 
 const Routes = () => {
     return (
@@ -14,6 +15,8 @@ const Routes = () => {
               <Scene key="Log" header={null} component={Log} />
               <Scene key="Login" header={null} component={Login} />
               <Scene key="Recover" header={null} component={Recover} />
+                <Scene key="Principal" header={null} component={Principal} initial/>
+                <Scene key="Grupos" header={null} component={Grupos} />
 
             </Scene>
           </Router>
