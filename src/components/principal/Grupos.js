@@ -1,26 +1,41 @@
-import React, {Component} from 'react';
-import {Text, Image} from 'react-native';
-import { Drawer, Container, Header, Content, Card, CardItem, Thumbnail, Button, Icon, Left, Body, Right } from 'native-base';
-import Pie from './Pie';
-import Menu from "./Menu";
+import React, { Component } from 'react';
+import {Text, Image,View} from 'react-native';
+import { Container, Content, Card, CardItem, Right, Button, Body, Left, Icon, Thumbnail } from 'native-base';
+import PieS from "./PieS";
 
-
-export default class Principal extends Component{
-    closeDrawer = () => {
-        this.drawer._root.close()
-    };
-    openDrawer = () => {
-        this.drawer._root.open()
-    };
-    render(){
-        return(
+export default class Grupos extends Component {
+    render() {
+        return (
             <Container>
-                <Drawer
-                    ref={(ref) => { this.drawer = ref; }}
-                    content={<Menu navigator={this.navigator} />}
-                    onClose={() => this.closeDrawer()} >
                 <Content>
+                    <Card>
+                        <CardItem cardBody>
+                            <Image source={{uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'}} style={{height: 150, width: null, flex: 1}}>
+                                <Text style={{color: 'white', fontSize:14, alignSelf:'flex-end'}}>Fixter Comunidad</Text>
+                            </Image>
+                        </CardItem>
+                        <CardItem>
+                            <Left>
+                                <Button transparent>
+                                    <Text>Miembro</Text>
+                                </Button>
+                            </Left>
+                            <Body>
+                            <Button transparent>
+                                <Text>Agregar Miembro</Text>
+                            </Button>
+                            </Body>
+                            <Right>
+                                <Text>Crear Evento</Text>
+                            </Right>
+                        </CardItem>
+                    </Card>
 
+                    <View>
+                        <Card>
+                            <Text>Publicar</Text>
+                        </Card>
+                    </View>
                     <Card style={{flex: 0}}>
                         <CardItem>
                             <Left>
@@ -32,7 +47,7 @@ export default class Principal extends Component{
                         </CardItem>
                         <CardItem>
                             <Body>
-                                <Image source={{uri: 'https://pbs.twimg.com/media/DM19m2yVoAAqynT.jpg'}} style={{height: 200, width: '100%', flex: 1}}/>
+                            <Image source={{uri: 'https://pbs.twimg.com/media/DM19m2yVoAAqynT.jpg'}} style={{height: 200, width: '100%', flex: 1}}/>
                             </Body>
                         </CardItem>
                         <CardItem>
@@ -109,12 +124,9 @@ export default class Principal extends Component{
                             </Right>
                         </CardItem>
                     </Card>
-
-
                 </Content>
-                <Pie/>
-                </Drawer>
+                <PieS/>
             </Container>
-        )
+        );
     }
 }
