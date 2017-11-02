@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Text, Image,View} from 'react-native';
+import {Text, Image,View, ImageBackground} from 'react-native';
 import { Container, Content, Card, CardItem, Right, Button, Body, Left, Icon, Thumbnail } from 'native-base';
 import PieS from "./PieS";
 
@@ -8,28 +8,26 @@ export default class Grupos extends Component {
         return (
             <Container>
                 <Content>
-                    <Card>
-                        <CardItem cardBody>
-                            <Image source={{uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'}} style={{height: 150, width: null, flex: 1}}>
-                                <Text style={{color: 'white', fontSize:14, alignSelf:'flex-end'}}>Fixter Comunidad</Text>
-                            </Image>
-                        </CardItem>
-                        <CardItem>
-                            <Left>
-                                <Button transparent>
-                                    <Text>Miembro</Text>
-                                </Button>
-                            </Left>
-                            <Body>
-                            <Button transparent>
-                                <Text>Agregar Miembro</Text>
+                    <ImageBackground source={{uri: 'https://cdn-images-1.medium.com/max/2000/1*H-gZIJOuBUucvXS4xMZ1mg.jpeg'}} style={{height: 130, width: '100%'}}>
+                            <Text>Ver perfil</Text>
+                    </ImageBackground>
+                    <CardItem>
+                        <Left>
+                            <Button transparent >
+                                <Text>Miembro</Text>
                             </Button>
-                            </Body>
-                            <Right>
+                        </Left>
+                        <Body>
+                        <Button transparent >
+                            <Text>Agregar Miembro</Text>
+                        </Button>
+                        </Body>
+                        <Right>
+                            <Button transparent >
                                 <Text>Crear Evento</Text>
-                            </Right>
-                        </CardItem>
-                    </Card>
+                            </Button>
+                        </Right>
+                    </CardItem>
 
                     <View>
                         <Card>
@@ -39,15 +37,15 @@ export default class Grupos extends Component {
                     <Card style={{flex: 0}}>
                         <CardItem>
                             <Left>
-                                <Thumbnail source={{uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'}} />
+                                <Thumbnail source={{uri: 'https://www.fixter.camp/static/assets/fotos/martin1-01.png'}} />
                                 <Body>
-                                <Text>Fixter</Text>
+                                <Text>Martin</Text>
                                 </Body>
                             </Left>
                         </CardItem>
                         <CardItem>
                             <Body>
-                            <Image source={{uri: 'https://pbs.twimg.com/media/DM19m2yVoAAqynT.jpg'}} style={{height: 200, width: '100%', flex: 1}}/>
+                            <Image source={{uri: 'https://pbs.twimg.com/profile_images/558890605980712960/Rpzl_hli.jpeg'}} style={{height: 200, width: '100%', flex: 1}}/>
                             </Body>
                         </CardItem>
                         <CardItem>
@@ -67,16 +65,16 @@ export default class Grupos extends Component {
                     <Card style={{flex: 0}}>
                         <CardItem>
                             <Left>
-                                <Thumbnail source={{uri: 'http://aldea.upp.edu.mx/ponente/imagenes.php?idp=31'}} />
+                                <Thumbnail source={{uri: 'https://www.fixter.camp/static/assets/fotos/david2-01.png'}} />
                                 <Body>
-                                <Text>Oswaldo</Text>
+                                <Text>David</Text>
                                 </Body>
                             </Left>
                         </CardItem>
                         <CardItem>
                             <Body>
                             <Text>
-                                Ya sea que juegues solo o en modo cooperativo con amigos, League of Legends es un juego muy competitivo y rápido con acción y estrategia diseñado para aquellos que ansían una victoria bien merecida. #Fit&Geek
+                                Bendita sea la tuerca del rin del eje de la llanta de la caja del camión que trajo el cemento para hacer la banqueta donde estás parada monumento
                             </Text>
                             </Body>
                         </CardItem>
@@ -97,17 +95,17 @@ export default class Grupos extends Component {
                     <Card style={{flex: 0}}>
                         <CardItem>
                             <Left>
-                                <Thumbnail source={{uri: 'http://blog.fixter.org/content/images/2017/04/bliss-1.jpg'}} />
+                                <Thumbnail source={{uri: 'https://www.fixter.camp/static/assets/fotos/saul1-01.png'}} />
                                 <Body>
-                                <Text>Hector Bliss</Text>
+                                <Text>Sául</Text>
                                 </Body>
                             </Left>
                         </CardItem>
                         <CardItem>
                             <Body>
-                            <Image source={{uri: 'https://i.ytimg.com/vi/Q3YeO1tufb4/maxresdefault.jpg'}} style={{height: 200, width: '100%', flex: 1}}/>
+                            <Image source={{uri: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2bT7rMBGehbLtY4gsJ_uAbZRdqe5BHUFuRjsKTidWzJU5Sq44nu9BRXKSdQ'}} style={{height: 200, width: '100%', flex: 1}}/>
                             <Text>
-                                Aprovecha está gran oportunidad!, inscríbete hoy y obtén el descuento del 20% ---> www.fixter.camp
+                                Daré por hecho que ya tienes instalado React Native junto con todas las herramientas de las que hablamos en ese post, y que además ya creaste el proyecto "FixterGeek"
                             </Text>
                             </Body>
                         </CardItem>
