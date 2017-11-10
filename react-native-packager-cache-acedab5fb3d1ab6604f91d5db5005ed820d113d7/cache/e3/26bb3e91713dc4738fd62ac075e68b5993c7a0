@@ -18,8 +18,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _nativeBase = require('native-base');
 
-var _reactNative = require('react-native');
-
 var _Pie = require('./Pie');
 
 var _Pie2 = _interopRequireDefault(_Pie);
@@ -36,9 +34,13 @@ var _lodash2 = _interopRequireDefault(_lodash);
 
 var _postActions = require('../actions/postActions');
 
-var _Card = require('./Card');
+var _filterActions = require('../actions/filterActions');
 
-var _Card2 = _interopRequireDefault(_Card);
+var _ResultPost = require('./ResultPost');
+
+var _PostsList = require('./PostsList');
+
+var _PostsList2 = _interopRequireDefault(_PostsList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -70,22 +72,33 @@ function _wrapComponent(id) {
 var Principal = _wrapComponent('Principal')(function (_Component) {
   _inherits(Principal, _Component);
 
-  function Principal() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
+  function Principal(props) {
     _classCallCheck(this, Principal);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+    var _this = _possibleConstructorReturn(this, (Principal.__proto__ || Object.getPrototypeOf(Principal)).call(this, props));
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Principal.__proto__ || Object.getPrototypeOf(Principal)).call.apply(_ref, [this].concat(args))), _this), _this.closeDrawer = function () {
+    _this.onSearch = function (value) {
+      _this.props.setSearch(value);
+      var results = _this.props.post;
+      var rEx = new RegExp(value, 'i');
+      results = results.filter(function (post) {
+        return rEx.test(post.text);
+      });
+      _this.setState({ results: results });
+    };
+
+    _this.closeDrawer = function () {
       _this.drawer._root.close();
-    }, _this.openDrawer = function () {
+    };
+
+    _this.openDrawer = function () {
       _this.drawer._root.open();
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+    };
+
+    _this.state = {
+      results: []
+    };
+    return _this;
   }
 
   _createClass(Principal, [{
@@ -98,29 +111,30 @@ var Principal = _wrapComponent('Principal')(function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var post = this.props.post;
+      var search = this.props.search;
+      var results = this.state.results;
 
       return _react3.default.createElement(
         _nativeBase.Container,
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 24
+            lineNumber: 40
           }
         },
         _react3.default.createElement(
           _nativeBase.Drawer,
-          { ref: function ref(_ref2) {
-              _this2.drawer = _ref2;
+          { ref: function ref(_ref) {
+              _this2.drawer = _ref;
             }, content: _react3.default.createElement(_Menu2.default, { navigator: this.navigator, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 28
+                lineNumber: 44
               }
             }), onClose: function onClose() {
               return _this2.closeDrawer();
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 25
+              lineNumber: 41
             }
           },
           _react3.default.createElement(
@@ -128,28 +142,23 @@ var Principal = _wrapComponent('Principal')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 32
+                lineNumber: 48
               }
             },
-            _react3.default.createElement(_reactNative.StatusBar, { backgroundColor: 'green', barStyle: 'light-content', __source: {
+            !search ? _react3.default.createElement(_PostsList2.default, {
+              __source: {
                 fileName: _jsxFileName,
-                lineNumber: 33
+                lineNumber: 53
               }
-            }),
-            post.map(function (post, index) {
-              return _react3.default.createElement(_Card2.default, {
-                key: index,
-                post: post,
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 37
-                }
-              });
+            }) : _react3.default.createElement(_ResultPost.ResultPost, { results: results, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 55
+              }
             })
           ),
-          _react3.default.createElement(_Pie2.default, { abrir: this.openDrawer, __source: {
+          _react3.default.createElement(_Pie2.default, { abrir: this.openDrawer, onSearch: this.onSearch, __source: {
               fileName: _jsxFileName,
-              lineNumber: 44
+              lineNumber: 59
             }
           })
         )
@@ -164,7 +173,7 @@ var mapStateToProps = function mapStateToProps(state) {
   var post = _lodash2.default.map(state.post, function (val, uid) {
     return _extends({}, val, { uid: uid });
   });
-  return { post: post };
+  return { post: post, search: state.filter.search };
 };
 
-exports.default = (0, _reactRedux.connect)(mapStateToProps, { postFetch: _postActions.postFetch })(Principal);
+exports.default = Principal = (0, _reactRedux.connect)(mapStateToProps, { setSearch: _filterActions.setSearch, postFetch: _postActions.postFetch })(Principal);

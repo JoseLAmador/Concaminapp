@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Text, View, Image, TouchableOpacity, StyleSheet, ImageBackground} from 'react-native';
 import {Drawer, Container, Content, Card, CardItem, Thumbnail, Button, Icon, Left, Body, Right} from 'native-base';
 
@@ -6,13 +6,10 @@ export const Cardd = ({
                           post
                       }) => {
 
-    const {userImage,
-        autor,
-        tiempo,
-        comentarios,
-        imagen,
-        postito,
-    } = post;
+    const {image,
+        text,
+        user
+    } = post
 
     return (
         <TouchableOpacity>
@@ -20,20 +17,20 @@ export const Cardd = ({
                 <CardItem>
                     <Left>
                         <Thumbnail source={{
-                            uri: userImage
+                            uri: "https://i.ytimg.com/vi/vHJPW8zo0og/hqdefault.jpg"
                         }}/>
                         <Body>
-                        <Text>{autor}</Text>
+                        <Text>{user}</Text>
                         </Body>
                     </Left>
                 </CardItem>
                 <CardItem>
                     <Body>
                     <Image source={{
-                        uri: imagen
+                        uri: image
                     }} style={styles.img}/>
                     <Text>
-                        {postito}
+                        {text}
                     </Text>
                     </Body>
                 </CardItem>
@@ -41,12 +38,12 @@ export const Cardd = ({
                     <Left>
                         <Button transparent>
                             <Icon active name="chatbubbles" style={styles.icon}/>
-                            <Text> {comentarios} Comentarios</Text>
+                            <Text> 2 Comentarios</Text>
                         </Button>
                     </Left>
                     <Body/>
                     <Right>
-                        <Text>{tiempo} minutos</Text>
+                        <Text>35 minutos</Text>
                     </Right>
                 </CardItem>
             </Card>

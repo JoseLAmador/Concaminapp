@@ -1,17 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {Header, Icon, Item, Input, Button} from 'native-base';
-import {Actions} from 'react-native-router-flux';
 
-const Pie = (props) => {
+const Pie = ({onSearch, abrir}) => {
   return (
     <Header searchBar style={styles.header}>
       <View style={styles.view}>
-        <Icon name="menu" style={styles.color} onPress={props.abrir}/>
+        <Icon name="menu" style={styles.color} onPress={abrir} />
       </View>
       <Item style={styles.item}>
         <Icon name="ios-search" style={styles.icon}/>
-        <Input placeholder="Buscar" style={styles.input}/>
+        <Input onChangeText={onSearch} placeholder="Buscar" style={styles.input}/>
       </Item>
     </Header>
   );

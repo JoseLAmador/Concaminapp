@@ -8,10 +8,15 @@ var _PostReducer = require("./PostReducer");
 
 var _PostReducer2 = _interopRequireDefault(_PostReducer);
 
+var _filterReducer = require("./filterReducer");
+
+var _filterReducer2 = _interopRequireDefault(_filterReducer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var rootReducer = (0, _redux.combineReducers)({
-    post: _PostReducer2.default
+    post: _PostReducer2.default,
+    filter: _filterReducer2.default
 });
 
 exports.default = rootReducer;
