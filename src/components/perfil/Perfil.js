@@ -11,7 +11,6 @@ export default class Perfil extends Component {
   render() {
     return (
       <Container style={styles.container}>
-      <Cabecera/>
       <Content>
         <Image source={img} style={styles.img}/>
           <View style={styles.view}>
