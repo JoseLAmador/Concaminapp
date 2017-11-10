@@ -127,7 +127,7 @@ export default class Principal extends Component {
             </Card>
 
           </Content>
-          <Pie/>
+          <Pie abrir={this.openDrawer}/>
         </Drawer>
       </Container>
     )

@@ -7,7 +7,7 @@ const Pie = (props) => {
   return (
     <Header searchBar style={styles.header}>
       <View style={styles.view}>
-        <Icon name="menu" style={styles.color} onPress={() => Actions.Grupos()}/>
+        <Icon name="menu" style={styles.color} onPress={props.abrir}/>
       </View>
       <Item style={styles.item}>
         <Icon name="ios-search" style={styles.icon}/>
