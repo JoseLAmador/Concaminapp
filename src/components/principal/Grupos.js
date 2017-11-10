@@ -1,13 +1,27 @@
 import React, {Component} from 'react';
 import {Text, Image, View, StyleSheet, ImageBackground} from 'react-native';
-import {Container, Content, Card, CardItem, Right, Button, Body, Left, Icon, Thumbnail} from 'native-base';
-import PieS from "./PieS";
+import {Container, Content, Card, CardItem, Right, Button, Body, Left, Icon, Thumbnail, Drawer} from 'native-base';
+import Pie from "./Pie";
 import {Actions} from 'react-native-router-flux';
+import Menu from "./Menu";
 
 export default class Grupos extends Component {
+  closeDrawer = () => {
+    this.drawer._root.close()
+  };
+  openDrawer = () => {
+    this.drawer._root.open()
+  };
   render() {
     return (
       <Container>
+        <Drawer ref={(ref) => {
+            this.drawer = ref;
+        }} content={
+            <Menu navigator = {
+              this.navigator
+            }/>
+          } onClose={() => this.closeDrawer()}>
       <Content>
         <Card>
           <CardItem cardBody>
@@ -143,7 +157,8 @@ export default class Grupos extends Component {
           </CardItem>
         </Card>
       </Content>
-      <PieS/>
+      <Pie abrir={this.openDrawer}/>
+        </Drawer>
     </Container>
     );
   }
