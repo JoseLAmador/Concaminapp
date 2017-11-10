@@ -1,0 +1,1 @@
+export const POST_FETCH_SUCCESS = 'post_fetch_success';

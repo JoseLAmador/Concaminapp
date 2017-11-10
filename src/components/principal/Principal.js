@@ -4,7 +4,9 @@ import {StatusBar} from 'react-native';
 import Pie from './Pie';
 import Menu from "./Menu";
 import {connect} from 'react-redux';
-import PostList from "./PostList";
+import _ from "lodash";
+import {postFetch} from "../actions/postActions";
+import Cardd from "./Card";
 
 class Principal extends Component {
   closeDrawer = () => {
@@ -13,7 +15,11 @@ class Principal extends Component {
   openDrawer = () => {
     this.drawer._root.open()
   };
+  componentWillMount(){
+    this.props.postFetch()
+  }
   render() {
+    const {post}=this.props;
     return (
       <Container>
         <Drawer ref={(ref) => {
@@ -27,7 +33,12 @@ class Principal extends Component {
             <StatusBar backgroundColor="green" barStyle="light-content"/>
 
 
-            <PostList />
+              {post.map((post,index)=>
+                  <Cardd
+                      key={index}
+                      post={post}
+                  />
+              )}
 
           </Content>
           <Pie abrir={this.openDrawer}/>
@@ -37,9 +48,12 @@ class Principal extends Component {
   }
 }
 
-function mapStateToProps(state) {
-    return {allPosts: state.posts.allPosts}
-}
+const mapStateToProps = state =>{
+  const post = _.map(state.post, (val,uid)=>{
+    return {...val, uid};
+  });
+  return {post}
+};
 
-export default Principal = connect(mapStateToProps)(Principal);
+export default connect (mapStateToProps, {postFetch})(Principal);
 

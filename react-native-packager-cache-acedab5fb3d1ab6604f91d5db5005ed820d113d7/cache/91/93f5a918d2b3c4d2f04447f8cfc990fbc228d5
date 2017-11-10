@@ -1,0 +1,4 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var POST_FETCH_SUCCESS = exports.POST_FETCH_SUCCESS = 'post_fetch_success';

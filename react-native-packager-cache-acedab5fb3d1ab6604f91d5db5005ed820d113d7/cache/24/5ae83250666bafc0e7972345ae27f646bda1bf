@@ -15,13 +15,13 @@ var _nativeBase = require('native-base');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Cardd = exports.Cardd = function Cardd(_ref) {
-    var p = _ref.p;
-    var userImage = p.userImage,
-        autor = p.autor,
-        tiempo = p.tiempo,
-        comentarios = p.comentarios,
-        imagen = p.imagen,
-        post = p.post;
+    var post = _ref.post;
+    var userImage = post.userImage,
+        autor = post.autor,
+        tiempo = post.tiempo,
+        comentarios = post.comentarios,
+        imagen = post.imagen,
+        postito = post.postito;
 
 
     return _react2.default.createElement(
@@ -114,7 +114,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
                                 lineNumber: 35
                             }
                         },
-                        post
+                        postito
                     )
                 )
             ),

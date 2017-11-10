@@ -3,7 +3,7 @@ import {Text, View, Image, TouchableOpacity, StyleSheet, ImageBackground} from '
 import {Drawer, Container, Content, Card, CardItem, Thumbnail, Button, Icon, Left, Body, Right} from 'native-base';
 
 export const Cardd = ({
-                          p
+                          post
                       }) => {
 
     const {userImage,
@@ -11,8 +11,8 @@ export const Cardd = ({
         tiempo,
         comentarios,
         imagen,
-        post,
-    } = p;
+        postito,
+    } = post;
 
     return (
         <TouchableOpacity>
@@ -33,7 +33,7 @@ export const Cardd = ({
                         uri: imagen
                     }} style={styles.img}/>
                     <Text>
-                        {post}
+                        {postito}
                     </Text>
                     </Body>
                 </CardItem>

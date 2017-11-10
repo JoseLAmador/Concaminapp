@@ -1,12 +1,12 @@
 import * as firebase from 'firebase';
 
 var config = {
-  apiKey: "AIzaSyBrx420xJAuQM1KPmYJnAxrMIaDfcQa1vI",
-  authDomain: "eatfast-f5acf.firebaseapp.com",
-  databaseURL: "https://eatfast-f5acf.firebaseio.com",
-  projectId: "eatfast-f5acf",
-  storageBucket: "",
-  messagingSenderId: "354773888658"
+    apiKey: "AIzaSyCs_9CJDDU4xxrb6wfG8AEz6Wf4WrS5tHI",
+    authDomain: "concamin-c2a9c.firebaseapp.com",
+    databaseURL: "https://concamin-c2a9c.firebaseio.com",
+    projectId: "concamin-c2a9c",
+    storageBucket: "concamin-c2a9c.appspot.com",
+    messagingSenderId: "796874295023"
 };
 firebase.initializeApp(config);
 export const firebaseAuth = firebase.auth();
