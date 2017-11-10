@@ -1,0 +1,22 @@
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.firebaseAuth = undefined;
+
+var _firebase = require("firebase");
+
+var firebase = _interopRequireWildcard(_firebase);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var config = {
+    apiKey: "AIzaSyCs_9CJDDU4xxrb6wfG8AEz6Wf4WrS5tHI",
+    authDomain: "concamin-c2a9c.firebaseapp.com",
+    databaseURL: "https://concamin-c2a9c.firebaseio.com",
+    projectId: "concamin-c2a9c",
+    storageBucket: "concamin-c2a9c.appspot.com",
+    messagingSenderId: "796874295023"
+};
+firebase.initializeApp(config);
+var firebaseAuth = exports.firebaseAuth = firebase.auth();
+exports.default = firebase;

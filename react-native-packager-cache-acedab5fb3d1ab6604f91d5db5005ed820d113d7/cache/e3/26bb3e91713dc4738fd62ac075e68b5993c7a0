@@ -1,0 +1,179 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require('react');
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require('./../../../node_modules/react-transform-hmr/lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _jsxFileName = '/home/jose/V\xEDdeos/Concaminapp/src/components/principal/Principal.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _nativeBase = require('native-base');
+
+var _Pie = require('./Pie');
+
+var _Pie2 = _interopRequireDefault(_Pie);
+
+var _Menu = require('./Menu');
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+var _reactRedux = require('react-redux');
+
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
+var _postActions = require('../actions/postActions');
+
+var _filterActions = require('../actions/filterActions');
+
+var _ResultPost = require('./ResultPost');
+
+var _PostsList = require('./PostsList');
+
+var _PostsList2 = _interopRequireDefault(_PostsList);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  Principal: {
+    displayName: 'Principal'
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: '/home/jose/V\xEDdeos/Concaminapp/src/components/principal/Principal.js',
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var Principal = _wrapComponent('Principal')(function (_Component) {
+  _inherits(Principal, _Component);
+
+  function Principal(props) {
+    _classCallCheck(this, Principal);
+
+    var _this = _possibleConstructorReturn(this, (Principal.__proto__ || Object.getPrototypeOf(Principal)).call(this, props));
+
+    _this.onSearch = function (value) {
+      _this.props.setSearch(value);
+      var results = _this.props.post;
+      var rEx = new RegExp(value, 'i');
+      results = results.filter(function (post) {
+        return rEx.test(post.text);
+      });
+      _this.setState({ results: results });
+    };
+
+    _this.closeDrawer = function () {
+      _this.drawer._root.close();
+    };
+
+    _this.openDrawer = function () {
+      _this.drawer._root.open();
+    };
+
+    _this.state = {
+      results: []
+    };
+    return _this;
+  }
+
+  _createClass(Principal, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.props.postFetch();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var search = this.props.search;
+      var results = this.state.results;
+
+      return _react3.default.createElement(
+        _nativeBase.Container,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+          }
+        },
+        _react3.default.createElement(
+          _nativeBase.Drawer,
+          { ref: function ref(_ref) {
+              _this2.drawer = _ref;
+            }, content: _react3.default.createElement(_Menu2.default, { navigator: this.navigator, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 44
+              }
+            }), onClose: function onClose() {
+              return _this2.closeDrawer();
+            }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 41
+            }
+          },
+          _react3.default.createElement(
+            _nativeBase.Content,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 48
+              }
+            },
+            !search ? _react3.default.createElement(_PostsList2.default, {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 53
+              }
+            }) : _react3.default.createElement(_ResultPost.ResultPost, { results: results, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 55
+              }
+            })
+          ),
+          _react3.default.createElement(_Pie2.default, { abrir: this.openDrawer, onSearch: this.onSearch, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 59
+            }
+          })
+        )
+      );
+    }
+  }]);
+
+  return Principal;
+}(_react2.Component));
+
+var mapStateToProps = function mapStateToProps(state) {
+  var post = _lodash2.default.map(state.post, function (val, uid) {
+    return _extends({}, val, { uid: uid });
+  });
+  return { post: post, search: state.filter.search };
+};
+
+exports.default = Principal = (0, _reactRedux.connect)(mapStateToProps, { setSearch: _filterActions.setSearch, postFetch: _postActions.postFetch })(Principal);

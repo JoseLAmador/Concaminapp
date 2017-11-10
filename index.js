@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import Routes from './src/Routes';
+import App from './src/App';
 
-AppRegistry.registerComponent('Concaminapp', () => Routes);
+AppRegistry.registerComponent('Concaminapp', () => App);
