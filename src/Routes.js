@@ -9,6 +9,8 @@ import Eventos from './components/eventos/Eventos';
 import NuevoEvento from './components/eventos/NuevoEvento';
 import Principal from "./components/principal/Principal";
 import Grupos from "./components/principal/Grupos";
+import DetalleEvento from "./components/eventos/DetalleEvento";
+
 const Routes = () => {
     return (
         <Root>
@@ -17,6 +19,7 @@ const Routes = () => {
               <Scene key="Perfil" header={null} component={Perfil} />
               <Scene key="Eventos" header={null} component={Eventos} />
               <Scene key="NuevoEvento" header={null} component={NuevoEvento}/>
+              <Scene key="DetalleEvento" header={null} component={DetalleEvento}/>
               <Scene key="Log" header={null} component={Log} />
               <Scene key="Login" header={null} component={Login} />
               <Scene key="Recover" header={null} component={Recover} />

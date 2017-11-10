@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
-import {Container, Content, List, ListItem, Title, Card, Fab, Icon} from 'native-base';
+import {Container, Content, List, ListItem, Title, Card, Fab, Icon, Button} from 'native-base';
 import img2 from '../../assets/imgs/usuario.jpeg';
 import Cabecera from '../header/Cabecera';
 import img from '../../assets/imgs/fondo.jpg';
@@ -17,7 +17,7 @@ export default class Perfil extends Component {
         <Title style={styles.title}>Tus proximos eventos</Title>
         <List>
           <Card>
-            <ListItem>
+            <ListItem onPress={()=>Actions.DetalleEvento()}>
               <Text>31 Oct{'\n'}mar</Text>
               <Text style={styles.text}>Vamonos al Cine Perros{'\n'}31 oct - 2 nov</Text>
               <Text style={styles.text2}>AHORA</Text>

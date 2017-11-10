@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, ImageBackground, Image, ScrollView, TouchableOpacity} from 'react-native';
-import {Container, Content, Button, Thumbnail, H1, Card, Icon, Title, Left, Right, Body, CardItem, Header} from 'native-base';
+import {Container, Content, Button, Thumbnail, H1, Card, Icon, Title, Left, Right, Body, CardItem, Header, StyleProvider} from 'native-base';
 import img2 from '../../assets/imgs/usuario.jpeg';
 import img from '../../assets/imgs/fondo.jpg';
 import {Actions} from 'react-native-router-flux';
@@ -12,6 +12,7 @@ export default class Perfil extends Component {
     return (
       <Container style={styles.container}>
       <Content>
+
         <Image source={img} style={styles.img}/>
           <View style={styles.view}>
             <View style={styles.view}>
@@ -31,9 +32,6 @@ export default class Perfil extends Component {
             </Card>
             <Card>
               <Text style={styles.texto}>0{'\n'}<Text>Visualizaciones de publicaciones</Text></Text>
-            </Card>
-            <Card>
-              <Text style={styles.texto}>0{'\n'}<Text>Apariciones en busquedas</Text></Text>
             </Card>
           </View>
 
@@ -228,7 +226,6 @@ const styles = StyleSheet.create({
     flex: 2,
     height: 200,
     width: null,
-    opacity: 15
   },
   container: {
     backgroundColor: 'white'

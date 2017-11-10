@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {Text, Image, View, StyleSheet, ImageBackground} from 'react-native';
-import {Container, Content, Card, CardItem, Right, Button, Body, Left, Icon, Thumbnail, Drawer} from 'native-base';
+import {Container, Content, Card, CardItem, Right, Button, Body, Left, Icon, Thumbnail, Drawer, List, ListItem, Input} from 'native-base';
 import Pie from "./Pie";
 import {Actions} from 'react-native-router-flux';
 import Menu from "./Menu";
+import img from '../../assets/imgs/usuario.jpeg';
 
 export default class Grupos extends Component {
   closeDrawer = () => {
@@ -51,10 +52,21 @@ export default class Grupos extends Component {
         </Card>
 
         <View>
-          <Card>
-            <Text>Publicar</Text>
+          <Card style={{height: 80, flexDirection: 'column', justifyContent: 'center'}}>
+            <ListItem avatar>
+              <Left>
+                <Thumbnail source={{ uri: 'https://avatars2.githubusercontent.com/u/20559576?s=460&v=4' }} />
+              </Left>
+              <Body>
+                <Input placeholder="Escribe algo.."></Input>
+              </Body>
+              <Right>
+                <Icon name="md-more"/>
+              </Right>
+            </ListItem>
           </Card>
         </View>
+
         <Card style={styles.card}>
           <CardItem>
             <Left>
