@@ -1,0 +1,744 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require('react');
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require('./../../../node_modules/react-transform-hmr/lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+var _jsxFileName = '/home/jose/V\xEDdeos/Concaminapp/src/components/principal/Grupos.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactNative = require('react-native');
+
+var _nativeBase = require('native-base');
+
+var _Pie = require('./Pie');
+
+var _Pie2 = _interopRequireDefault(_Pie);
+
+var _reactNativeRouterFlux = require('react-native-router-flux');
+
+var _Menu = require('./Menu');
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  Grupos: {
+    displayName: 'Grupos'
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: '/home/jose/V\xEDdeos/Concaminapp/src/components/principal/Grupos.js',
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var Grupos = _wrapComponent('Grupos')(function (_Component) {
+  _inherits(Grupos, _Component);
+
+  function Grupos() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Grupos);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Grupos.__proto__ || Object.getPrototypeOf(Grupos)).call.apply(_ref, [this].concat(args))), _this), _this.closeDrawer = function () {
+      _this.drawer._root.close();
+    }, _this.openDrawer = function () {
+      _this.drawer._root.open();
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Grupos, [{
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      return _react3.default.createElement(
+        _nativeBase.Container,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17
+          }
+        },
+        _react3.default.createElement(
+          _nativeBase.Drawer,
+          { ref: function ref(_ref2) {
+              _this2.drawer = _ref2;
+            }, content: _react3.default.createElement(_Menu2.default, { navigator: this.navigator, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 21
+              }
+            }), onClose: function onClose() {
+              return _this2.closeDrawer();
+            }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 18
+            }
+          },
+          _react3.default.createElement(
+            _nativeBase.Content,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 25
+              }
+            },
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 26
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                { cardBody: true, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 27
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.ImageBackground,
+                  { source: {
+                      uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
+                    }, style: styles.img, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 28
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.texto, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 31
+                      }
+                    },
+                    'Fixter Comunidad'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 34
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 35
+                    }
+                  },
+                  _react3.default.createElement(
+                    _nativeBase.Button,
+                    { transparent: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 36
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 37
+                        }
+                      },
+                      'Miembro'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 40
+                    }
+                  },
+                  _react3.default.createElement(
+                    _nativeBase.Button,
+                    { transparent: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 41
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 42
+                        }
+                      },
+                      'Agregar Miembro'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _nativeBase.Right,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 45
+                    }
+                  },
+                  _react3.default.createElement(
+                    _nativeBase.Button,
+                    { transparent: true, onPress: function onPress() {
+                        return _reactNativeRouterFlux.Actions.NuevoEvento();
+                      }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 46
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 47
+                        }
+                      },
+                      'Crear Evento'
+                    )
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _reactNative.View,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 53
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Card,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 54
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 55
+                    }
+                  },
+                  'Publicar'
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              { style: styles.card, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 58
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 59
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 60
+                    }
+                  },
+                  _react3.default.createElement(_nativeBase.Thumbnail, { source: {
+                      uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'
+                    }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 61
+                    }
+                  }),
+                  _react3.default.createElement(
+                    _nativeBase.Body,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 64
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 65
+                        }
+                      },
+                      'Fixter'
+                    )
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 69
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 70
+                    }
+                  },
+                  _react3.default.createElement(_reactNative.ImageBackground, { source: {
+                      uri: 'https://pbs.twimg.com/media/DM19m2yVoAAqynT.jpg'
+                    }, style: styles.img, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 71
+                    }
+                  })
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 76
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 77
+                    }
+                  },
+                  _react3.default.createElement(
+                    _nativeBase.Button,
+                    { transparent: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 78
+                      }
+                    },
+                    _react3.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 79
+                      }
+                    }),
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 80
+                        }
+                      },
+                      '4 Comentarios'
+                    )
+                  )
+                ),
+                _react3.default.createElement(_nativeBase.Body, {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 83
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Right,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 84
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 85
+                      }
+                    },
+                    '30 minutos'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              { style: styles.card, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 90
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 91
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 92
+                    }
+                  },
+                  _react3.default.createElement(_nativeBase.Thumbnail, { source: {
+                      uri: 'http://aldea.upp.edu.mx/ponente/imagenes.php?idp=31'
+                    }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 93
+                    }
+                  }),
+                  _react3.default.createElement(
+                    _nativeBase.Body,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 96
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 97
+                        }
+                      },
+                      'Oswaldo'
+                    )
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 101
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 102
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 103
+                      }
+                    },
+                    'Ya sea que juegues solo o en modo cooperativo con amigos, League of Legends es un juego muy competitivo y r\xE1pido con acci\xF3n y estrategia dise\xF1ado para aquellos que ans\xEDan una victoria bien merecida. #Fit&Geek'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 110
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 111
+                    }
+                  },
+                  _react3.default.createElement(
+                    _nativeBase.Button,
+                    { transparent: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 112
+                      }
+                    },
+                    _react3.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 113
+                      }
+                    }),
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 114
+                        }
+                      },
+                      '7 Comentarios'
+                    )
+                  )
+                ),
+                _react3.default.createElement(_nativeBase.Body, {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 117
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Right,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 118
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 119
+                      }
+                    },
+                    '45 minutos'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              { style: styles.card, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 124
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 125
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 126
+                    }
+                  },
+                  _react3.default.createElement(_nativeBase.Thumbnail, { source: {
+                      uri: 'http://blog.fixter.org/content/images/2017/04/bliss-1.jpg'
+                    }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 127
+                    }
+                  }),
+                  _react3.default.createElement(
+                    _nativeBase.Body,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 130
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 131
+                        }
+                      },
+                      'Hector Bliss'
+                    )
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 135
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 136
+                    }
+                  },
+                  _react3.default.createElement(_reactNative.ImageBackground, { source: {
+                      uri: 'https://i.ytimg.com/vi/Q3YeO1tufb4/maxresdefault.jpg'
+                    }, style: styles.img, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 137
+                    }
+                  }),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 140
+                      }
+                    },
+                    'Aprovecha est\xE1 gran oportunidad!, inscr\xEDbete hoy y obt\xE9n el descuento del 20% ---> www.fixter.camp'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 146
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 147
+                    }
+                  },
+                  _react3.default.createElement(
+                    _nativeBase.Button,
+                    { transparent: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 148
+                      }
+                    },
+                    _react3.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 149
+                      }
+                    }),
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 150
+                        }
+                      },
+                      '12 Comentarios'
+                    )
+                  )
+                ),
+                _react3.default.createElement(_nativeBase.Body, {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 153
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Right,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 154
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 155
+                      }
+                    },
+                    '1 hora'
+                  )
+                )
+              )
+            )
+          ),
+          _react3.default.createElement(_Pie2.default, { abrir: this.openDrawer, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 160
+            }
+          })
+        )
+      );
+    }
+  }]);
+
+  return Grupos;
+}(_react2.Component));
+
+exports.default = Grupos;
+
+
+var styles = _reactNative.StyleSheet.create({
+  img: {
+    height: 150,
+    width: null,
+    flex: 1
+  },
+  texto: {
+    color: 'white',
+    fontSize: 14,
+    alignSelf: 'flex-end'
+  },
+  card: {
+    flex: 0
+  }
+});

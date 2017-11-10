@@ -1,0 +1,17 @@
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _redux = require('redux');
+
+var _postsReducer = require('./postsReducer');
+
+var _postsReducer2 = _interopRequireDefault(_postsReducer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var rootReducer = (0, _redux.combineReducers)({
+    posts: _postsReducer2.default
+});
+
+exports.default = rootReducer;

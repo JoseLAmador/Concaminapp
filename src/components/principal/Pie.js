@@ -21,7 +21,7 @@ export default Pie;
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: "#e8e8e8",
+    backgroundColor: "green",
     justifyContent: 'space-between'
   },
   view: {
