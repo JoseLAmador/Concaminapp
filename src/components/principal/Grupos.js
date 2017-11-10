@@ -58,7 +58,7 @@ export default class Grupos extends Component {
                 <Thumbnail source={{ uri: 'https://avatars2.githubusercontent.com/u/20559576?s=460&v=4' }} />
               </Left>
               <Body>
-                <Input placeholder="Escribe algo.."></Input>
+                <Input placeholder="Escribe algo.."/>
               </Body>
               <Right>
                 <Icon name="md-more"/>

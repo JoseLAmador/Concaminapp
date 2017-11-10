@@ -23,7 +23,7 @@ export default class Menu extends Component {
             <ListItem itemDivider>
               <Text>FAVORITOS</Text>
             </ListItem>
-            <ListItem icon>
+            <ListItem icon onPress={()=> Actions.Principal()}>
               <Left>
                 <Icon name="ios-book" />
               </Left>
