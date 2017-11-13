@@ -1,6 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import {Header, Icon, Item, Input, Button} from 'native-base';
+import {StyleSheet, View} from 'react-native';
+import {Header, Icon, Item, Input} from 'native-base';
 
 const Pie = ({onSearch, abrir}) => {
   return (

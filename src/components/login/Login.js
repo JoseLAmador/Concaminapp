@@ -69,7 +69,13 @@ export default class Login extends Component < {} > {
     return (
       <View style={styles.img}>
         <StatusBar backgroundColor="orange" barStyle="light-content"/>
-        <Video source={videopp} rate={1.0} muted={true} resizeMode={"cover"} repeat="repeat" style={styles.video}/>
+        <Video
+          source={videopp}
+          rate={1.0}
+          muted={true}
+          resizeMode={"cover"}
+          repeat
+          style={styles.video}/>
 
         <View>
           <Item style={styles.inputRounded}>

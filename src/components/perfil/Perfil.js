@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, ImageBackground, Image, ScrollView, TouchableOpacity} from 'react-native';
-import {Container, Content, Button, Thumbnail, H1, Card, Icon, Title, Left, Right, Body, CardItem, Header, StyleProvider} from 'native-base';
+import {View, Text, StyleSheet, Image} from 'react-native';
+import {Container, Content, Button, Thumbnail, H1, Card, Icon, Left, Body, CardItem} from 'native-base';
 import img2 from '../../assets/imgs/usuario.jpeg';
 import img from '../../assets/imgs/fondo.jpg';
 import {Actions} from 'react-native-router-flux';
 import img3 from '../../assets/imgs/mr.jpg';
-import Cabecera from '../header/Cabecera';
 
 export default class Perfil extends Component {
   render() {

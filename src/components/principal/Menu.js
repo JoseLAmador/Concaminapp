@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {Dimensions, StyleSheet, View, Text, Image, ScrollView, TouchableOpacity, ImageBackground } from 'react-native';
+import {StyleSheet, Text, Image, TouchableOpacity, ImageBackground} from 'react-native';
 import img2 from '../../assets/imgs/nouser.png';
-import {List, ListItem, Left, Body, Right, Button, Icon, Content, Container, Switch, Badge} from 'native-base';
+import {List, ListItem, Left, Body, Right, Icon, Content, Container, Badge} from 'native-base';
 import {Actions} from 'react-native-router-flux';
 
 export default class Menu extends Component {
@@ -49,7 +49,7 @@ export default class Menu extends Component {
                 </Badge>
               </Right>
             </ListItem>
-            <ListItem icon>
+            <ListItem icon onPress={()=>Actions.Amigos()}>
               <Left>
                 <Icon name="person" />
               </Left>
