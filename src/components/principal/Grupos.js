@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
-import {Text, Image, View, StyleSheet, ImageBackground} from 'react-native';
-import {Container, Content, Card, CardItem, Right, Button, Body, Left, Icon, Thumbnail, Drawer, List, ListItem, Input} from 'native-base';
+import {Text, Image, View, StyleSheet, ImageBackground, StatusBar} from 'react-native';
+import {Container, Content, CardItem, Right, Button, Body, Left, Icon, Thumbnail, Drawer, List, ListItem, Input} from 'native-base';
 import Pie from './Pie';
 import {Actions} from 'react-native-router-flux';
 import Menu from './Menu';
 import img from '../../assets/imgs/usuario.jpeg';
+import {postFetch} from '../actions/postActions';
+import {connect} from 'react-redux';
+import Card from './Card';
+import EncabezadoG from "./EncabezadoG";
 
-export default class Grupos extends Component {
+class Grupos extends Component {
   closeDrawer = () => {
     this.drawer._root.close()
   };
@@ -16,6 +20,7 @@ export default class Grupos extends Component {
   };
 
   render() {
+      const {post} = this.props;
     return (
       <Container>
         <Drawer ref={(ref) => {
@@ -25,35 +30,37 @@ export default class Grupos extends Component {
               this.navigator
             }/>
           } onClose={() => this.closeDrawer()}>
+          <EncabezadoG abrir={this.openDrawer}/>
       <Content>
-        <Card>
+        <StatusBar backgroundColor="green" barStyle="light-content"/>
           <CardItem cardBody>
             <ImageBackground source={{
                 uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
               }} style={styles.img}>
-              <Text style={styles.texto}>Fixter Comunidad</Text>
             </ImageBackground>
           </CardItem>
-          <CardItem>
-            <Left>
-              <Button transparent>
-                <Text>Miembro</Text>
-              </Button>
-            </Left>
-            <Body>
-              <Button transparent>
-                <Text>Agregar Miembro</Text>
-              </Button>
-            </Body>
-            <Right>
-              <Button transparent onPress={()=> Actions.NuevoEvento()}>
-                <Text>Crear Evento</Text>
-              </Button>
-            </Right>
-          </CardItem>
-        </Card>
+          <View style={styles.miembros}>
 
-        <View>
+              <View style={styles.vnew}>
+                <Icon name="md-checkmark" style={styles.iconC}/>
+                <Text>Miembro</Text>
+              </View>
+
+
+              <View style={styles.vnew}>
+                <Icon name="ios-people" style={styles.icons}/>
+                <Text>Agregar Miembro</Text>
+              </View>
+
+
+              <View onPress={()=> Actions.NuevoEvento()} style={styles.vnew}>
+                <Icon name="ios-calendar" style={styles.icons}/>
+                <Text>Crear Evento</Text>
+              </View>
+          </View>
+
+
+       {/*<View>
           <Card style={styles.post}>
             <ListItem avatar>
               <Left>
@@ -69,116 +76,34 @@ export default class Grupos extends Component {
               </Right>
             </ListItem>
           </Card>
-        </View>
+        </View>*/}
 
-        <Card style={styles.card}>
-          <CardItem>
-            <Left>
-              <Thumbnail source={{
-                  uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'
-                }}/>
-              <Body>
-                <Text>Fixter</Text>
-              </Body>
-            </Left>
-          </CardItem>
-          <CardItem>
-            <Body>
-              <ImageBackground source={{
-                  uri: 'https://pbs.twimg.com/media/DM19m2yVoAAqynT.jpg'
-                }} style={styles.img}/>
-            </Body>
-          </CardItem>
-          <CardItem>
-            <Left>
-              <Button transparent>
-                <Icon active name="chatbubbles"/>
-                <Text>4 Comentarios</Text>
-              </Button>
-            </Left>
-            <Body/>
-            <Right>
-              <Text>30 minutos</Text>
-            </Right>
-          </CardItem>
-        </Card>
 
-        <Card style={styles.card}>
-          <CardItem>
-            <Left>
-              <Thumbnail source={{
-                  uri: 'http://aldea.upp.edu.mx/ponente/imagenes.php?idp=31'
-                }}/>
-              <Body>
-                <Text>Oswaldo</Text>
-              </Body>
-            </Left>
-          </CardItem>
-          <CardItem>
-            <Body>
-              <Text>
-                Ya sea que juegues solo o en modo cooperativo con amigos, League of Legends es un juego muy
-                competitivo y rápido con acción y estrategia diseñado para aquellos que ansían una victoria
-                bien merecida. #Fit&Geek
-              </Text>
-            </Body>
-          </CardItem>
-          <CardItem>
-            <Left>
-              <Button transparent>
-                <Icon active name="chatbubbles"/>
-                <Text>7 Comentarios</Text>
-              </Button>
-            </Left>
-            <Body/>
-            <Right>
-              <Text>45 minutos</Text>
-            </Right>
-          </CardItem>
-        </Card>
+          {post.reverse().map((post, index)=>{
+              return <Card
+                  key={index}
+                  index={index}
+                  post={post}
+              />
+          })}
 
-        <Card style={styles.card}>
-          <CardItem>
-            <Left>
-              <Thumbnail source={{
-                  uri: 'http://blog.fixter.org/content/images/2017/04/bliss-1.jpg'
-                }}/>
-              <Body>
-                <Text>Hector Bliss</Text>
-              </Body>
-            </Left>
-          </CardItem>
-          <CardItem>
-            <Body>
-              <ImageBackground source={{
-                  uri: 'https://i.ytimg.com/vi/Q3YeO1tufb4/maxresdefault.jpg'
-                }} style={styles.img}/>
-              <Text>
-                Aprovecha está gran oportunidad!, inscríbete hoy y obtén el descuento del 20%
-                ---> www.fixter.camp
-              </Text>
-            </Body>
-          </CardItem>
-          <CardItem>
-            <Left>
-              <Button transparent>
-                <Icon active name="chatbubbles"/>
-                <Text>12 Comentarios</Text>
-              </Button>
-            </Left>
-            <Body/>
-            <Right>
-              <Text>1 hora</Text>
-            </Right>
-          </CardItem>
-        </Card>
+
       </Content>
-      <Pie abrir={this.openDrawer}/>
+
       </Drawer>
     </Container>
     );
   }
 }
+
+const mapStateToProps = state =>{
+    const post = _.map(state.post, (val,uid)=>{
+        return {...val, uid};
+    });
+    return {post}
+};
+
+export default connect (mapStateToProps, {postFetch})(Grupos);
 
 const styles = StyleSheet.create({
   img: {
@@ -198,5 +123,31 @@ const styles = StyleSheet.create({
     height: 80,
     flexDirection: 'column',
     justifyContent: 'center'
-  }
+  },
+    miembros:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        padding:15,
+        backgroundColor:'white',
+        shadowColor: '#000',
+        shadowOffset: {width: 0, height: 2},
+        shadowOpacity: 0.2,
+        elevation: 2,
+    },
+    vnew:{
+        flexDirection:'column',
+        alignSelf:'center'
+    },
+    iconC:{
+        color:'green',
+        fontSize:34,
+        fontWeight:'bold',
+        alignSelf:'center'
+    },
+    icons:{
+        color:'green',
+        fontSize:34,
+        alignSelf:'center'
+    }
+
 });

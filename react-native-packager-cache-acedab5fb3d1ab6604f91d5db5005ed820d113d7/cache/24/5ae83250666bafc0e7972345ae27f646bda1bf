@@ -26,14 +26,14 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 10
       }
     },
     _react2.default.createElement(
       _nativeBase.Card,
       { style: styles.card, __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 11
         }
       },
       _react2.default.createElement(
@@ -41,7 +41,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 11
+            lineNumber: 12
           }
         },
         _react2.default.createElement(
@@ -49,14 +49,14 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 13
             }
           },
           _react2.default.createElement(_nativeBase.Thumbnail, { source: {
               uri: "https://i.ytimg.com/vi/vHJPW8zo0og/hqdefault.jpg"
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 13
+              lineNumber: 14
             }
           }),
           _react2.default.createElement(
@@ -64,7 +64,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 16
+                lineNumber: 17
               }
             },
             _react2.default.createElement(
@@ -72,7 +72,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 17
+                  lineNumber: 18
                 }
               },
               user
@@ -85,7 +85,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 21
+            lineNumber: 22
           }
         },
         _react2.default.createElement(
@@ -93,14 +93,14 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 22
+              lineNumber: 23
             }
           },
           _react2.default.createElement(_reactNative.Image, { source: {
               uri: image
             }, style: styles.img, __source: {
               fileName: _jsxFileName,
-              lineNumber: 23
+              lineNumber: 24
             }
           }),
           _react2.default.createElement(
@@ -108,7 +108,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 26
+                lineNumber: 27
               }
             },
             text
@@ -120,7 +120,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 31
+            lineNumber: 32
           }
         },
         _react2.default.createElement(
@@ -128,19 +128,19 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 32
+              lineNumber: 33
             }
           },
           _react2.default.createElement(
             _nativeBase.Button,
             { transparent: true, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 33
+                lineNumber: 34
               }
             },
             _react2.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', style: styles.icon, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 34
+                lineNumber: 35
               }
             }),
             _react2.default.createElement(
@@ -148,7 +148,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 35
+                  lineNumber: 36
                 }
               },
               '2 Comentarios'
@@ -158,7 +158,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
         _react2.default.createElement(_nativeBase.Body, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 40
           }
         }),
         _react2.default.createElement(
@@ -166,7 +166,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 40
+              lineNumber: 41
             }
           },
           _react2.default.createElement(
@@ -174,7 +174,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 41
+                lineNumber: 42
               }
             },
             '35 minutos'
@@ -203,6 +203,7 @@ var styles = _reactNative.StyleSheet.create({
     flex: 0
   },
   icon: {
-    color: 'green'
+    color: 'green',
+    margin: 5
   }
 });

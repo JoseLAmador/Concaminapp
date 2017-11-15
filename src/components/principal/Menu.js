@@ -1,23 +1,25 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, Image, TouchableOpacity, ImageBackground} from 'react-native';
-import img2 from '../../assets/imgs/nouser.png';
-import {List, ListItem, Left, Body, Right, Icon, Content, Container, Badge} from 'native-base';
+import {StyleSheet, Text, Image, TouchableOpacity, ImageBackground, View} from 'react-native';
+import {List, ListItem, Left, Body, Right, Icon, Content, Container, Badge, CardItem} from 'native-base';
 import {Actions} from 'react-native-router-flux';
 
 export default class Menu extends Component {
   render(){
     return(
       <Container style={styles.menu}>
-        <Content>
+        <View style={{height:130}}>
           <ImageBackground source={{
-              uri: 'http://pcshouters.com/wp-content/uploads/2017/01/Advancement-in-Technology-800x480.jpg'}}
-            style={styles.img}>
-            <TouchableOpacity style={styles.usuarioImagen} onPress={() => Actions.Perfil()}>
-              <Image style={styles.usuario} source={{
-                uri:'http://images.eonline.com/eol_images/Entire_Site/2017229//rs_600x600-170329085414-600.Cristiano-Ronaldo.cm.32917.jpg'}}/>
-              <Text style={styles.text}>Ver perfil</Text>
-            </TouchableOpacity>
+              uri: 'http://www.visionindustrial.com.mx//wp-content/uploads/336d6e45001c603052accd6de4c50b60.jpg'
+          }} style={styles.img}>
           </ImageBackground>
+        </View>
+        <Content>
+
+          <TouchableOpacity style={styles.usuarioImagen} onPress={() => Actions.Perfil()}>
+            <Image style={styles.usuario} source={{
+                uri:'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'}}/>
+            <Text style={styles.text}>Fixter</Text>
+          </TouchableOpacity>
 
           <List>
             <ListItem itemDivider>
@@ -25,20 +27,20 @@ export default class Menu extends Component {
             </ListItem>
             <ListItem icon onPress={()=> Actions.Principal()}>
               <Left>
-                <Icon name="ios-book" />
+                <Icon name="ios-book" style={styles.iconColor}/>
               </Left>
               <Body>
                 <Text>Más recientes</Text>
               </Body>
               <Right>
-                <Badge success style={{}}>
+                <Badge success style={styles.badge}>
                   <Text>12</Text>
                 </Badge>
               </Right>
             </ListItem>
             <ListItem icon onPress={() => Actions.Eventos()}>
               <Left>
-                <Icon name="ios-calendar" />
+                <Icon name="ios-calendar" style={styles.iconColor}/>
               </Left>
               <Body>
                 <Text>Eventos</Text>
@@ -49,9 +51,9 @@ export default class Menu extends Component {
                 </Badge>
               </Right>
             </ListItem>
-            <ListItem icon onPress={()=>Actions.Amigos()}>
+            <ListItem icon >
               <Left>
-                <Icon name="person" />
+                <Icon name="person" style={styles.iconColor}/>
               </Left>
               <Body>
                 <Text>Amigos</Text>
@@ -66,7 +68,7 @@ export default class Menu extends Component {
             </ListItem>
             <ListItem icon onPress={()=>Actions.Grupos()}>
               <Left>
-                <Icon name="bulb" />
+                <Icon name="bulb" style={styles.iconColor}/>
               </Left>
               <Body>
                 <Text>Fixter-Comunidad</Text>
@@ -79,7 +81,7 @@ export default class Menu extends Component {
             </ListItem>
             <ListItem icon>
               <Left>
-                <Icon name="ios-microphone" />
+                <Icon name="ios-microphone" style={styles.iconColor} />
               </Left>
               <Body>
                 <Text>VectorBr</Text>
@@ -88,7 +90,7 @@ export default class Menu extends Component {
             </ListItem>
             <ListItem icon>
               <Left>
-                <Icon name="pizza" />
+                <Icon name="pizza" style={styles.iconColor} />
               </Left>
               <Body>
                 <Text>Lol-Pachuca</Text>
@@ -101,7 +103,7 @@ export default class Menu extends Component {
             </ListItem>
             <ListItem icon>
               <Left>
-                <Icon name="nutrition" />
+                <Icon name="nutrition" style={styles.iconColor}/>
               </Left>
               <Body>
                 <Text>Fit&Geek</Text>
@@ -114,7 +116,7 @@ export default class Menu extends Component {
             </ListItem>
             <ListItem icon>
               <Left>
-                <Icon name="beer" />
+                <Icon name="beer" style={styles.iconColor}/>
               </Left>
               <Body>
                 <Text>MarioKart</Text>
@@ -133,15 +135,19 @@ export default class Menu extends Component {
 };
 
 const styles = StyleSheet.create({
-  menu: {
-    flex: 1,
-    backgroundColor: 'white'
-  },
+    img: {
+        height: 130,
+        width: 200,
+        flex: 1,
+        alignSelf:'center',
+
+    },
   usuario: {
     width: 60,
     height: 60,
     margin: 20,
-    marginTop: 30
+      borderRadius:10
+
   },
   usuarioImagen: {
     flexDirection: 'row',
@@ -149,14 +155,20 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 15,
-    color: 'white'
+    color: 'black',
+      fontWeight:'bold'
   },
   badge: {
     justifyContent:'center',
-    alignItems:'center'
+    alignItems:'center',
+
+
   },
-  img: {
-    height: 130,
-    width: '100%'
-  }
+    menu:{
+      backgroundColor:'white'
+    },
+    iconColor:{
+      color:'green',
+    }
+
 });
