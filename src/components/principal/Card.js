@@ -5,6 +5,7 @@ import {Drawer, Container, Content, Card, CardItem, Thumbnail, Button, Icon, Lef
 export const Cardd = ({post}) => {
   const {image, text, user} = post
 
+
   return (
     <TouchableOpacity>
       <Card style={styles.card}>
@@ -63,6 +64,7 @@ const styles = StyleSheet.create({
     flex: 0
   },
   icon: {
-    color: 'green'
+    color: 'green',
+      margin:5
   }
 });
