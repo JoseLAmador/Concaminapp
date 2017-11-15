@@ -10,22 +10,23 @@ class PostsList extends Component {
     this.props.postFetch()
   }
 
-  render(){
-    const {post} = this.props;
+    render(){
+        const {post} = this.props;
+        return(
 
-    return(
-      <Content>
-      <StatusBar backgroundColor="green" barStyle="light-content"/>
-        {post.map((post, index)=>{
-          return <Card
-                  key={index}
-                  index={index}
-                  post={post}
-                  />
-        })}
-      </Content>
-    );
-  };
+            <Content>
+                <StatusBar backgroundColor="green" barStyle="light-content"/>
+                {post.reverse().map((post, index)=>{
+                    return <Card
+                        key={index}
+                        index={index}
+                        post={post}
+                    />
+                })}
+            </Content>
+
+        );
+    };
 };
 
 const mapStateToProps = state =>{

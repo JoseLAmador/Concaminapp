@@ -167,7 +167,13 @@ var Login = _wrapComponent('Login')(function (_Component) {
             lineNumber: 71
           }
         }),
-        _react3.default.createElement(_reactNativeVideo2.default, { source: _videopp2.default, rate: 1.0, muted: true, resizeMode: "cover", repeat: 'repeat', style: styles.video, __source: {
+        _react3.default.createElement(_reactNativeVideo2.default, {
+          source: _videopp2.default,
+          rate: 1.0,
+          muted: true,
+          resizeMode: "cover",
+          repeat: true,
+          style: styles.video, __source: {
             fileName: _jsxFileName,
             lineNumber: 72
           }
@@ -177,14 +183,14 @@ var Login = _wrapComponent('Login')(function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 74
+              lineNumber: 80
             }
           },
           _react3.default.createElement(
             _nativeBase.Item,
             { style: styles.inputRounded, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 75
+                lineNumber: 81
               }
             },
             _react3.default.createElement(_nativeBase.Input, {
@@ -200,7 +206,7 @@ var Login = _wrapComponent('Login')(function (_Component) {
                 return _this2.handleChange("correo", value);
               }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 76
+                lineNumber: 82
               }
             })
           ),
@@ -208,7 +214,7 @@ var Login = _wrapComponent('Login')(function (_Component) {
             _nativeBase.Item,
             { style: styles.inputRounded, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 88
+                lineNumber: 94
               }
             },
             _react3.default.createElement(_nativeBase.Input, {
@@ -221,7 +227,7 @@ var Login = _wrapComponent('Login')(function (_Component) {
                 return _this2.handleChange("password", value);
               }, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 89
+                lineNumber: 95
               }
             })
           ),
@@ -231,21 +237,21 @@ var Login = _wrapComponent('Login')(function (_Component) {
           _reactNative.View,
           { style: styles.view2, __source: {
               fileName: _jsxFileName,
-              lineNumber: 101
+              lineNumber: 107
             }
           },
           _react3.default.createElement(
             _reactNative.View,
             { style: styles.view3, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 102
+                lineNumber: 108
               }
             },
             _react3.default.createElement(
               _reactNative.View,
               { style: styles.view, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 103
+                  lineNumber: 109
                 }
               },
               _react3.default.createElement(
@@ -254,14 +260,14 @@ var Login = _wrapComponent('Login')(function (_Component) {
                     return _reactNativeRouterFlux.Actions.Recover();
                   }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 104
+                    lineNumber: 110
                   }
                 },
                 _react3.default.createElement(
                   _reactNative.Text,
                   { style: styles.text, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 105
+                      lineNumber: 111
                     }
                   },
                   '\xBFOlvidaste tu Contrase\xF1a?'

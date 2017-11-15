@@ -1,24 +1,26 @@
 import React, {Component} from 'react';
 import {Text, Image, StyleSheet, View} from 'react-native';
 import {Container, Content, Left, Body, Right, ListItem, List, Icon, Card, CardItem} from 'native-base';
+import Cabecera from '../header/Cabecera';
 
 export default class DetalleEvento extends Component {
   render() {
     return (
       <Container style={styles.back}>
+        <Cabecera/>
         <Content>
           <Image source={{
               uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'
             }} style={styles.img}/>
 
           <View style={styles.view}>
-            <Text style={styles.textFecha}>OCT {'\n'}28</Text>
-            <Text style={styles.titulo}>Desempance o que perros??</Text>
+            <Text style={styles.textFecha}><Text style={styles.color}>OCT</Text> {'\n'}28</Text>
+            <Text style={styles.titulo}>Reunion de Fin de Año</Text>
           </View>
 
           <List>
             <ListItem>
-              <Text>Hector Bliss te invito</Text>
+              <Text style={styles.inv}>Hector Bliss te invito</Text>
             </ListItem>
           </List>
 
@@ -27,7 +29,7 @@ export default class DetalleEvento extends Component {
               <Text style={styles.text}>ME INTERESA</Text>
             </Left>
             <Body>
-              <Text style={styles.text}>ASISTIRE</Text>
+              <Text style={styles.text1}>ASISTIRE</Text>
             </Body>
             <Right>
               <Text style={styles.text}>IGNORAR</Text>
@@ -74,18 +76,15 @@ export default class DetalleEvento extends Component {
               <Image source={{uri: 'https://avatars2.githubusercontent.com/u/6130385?s=460&v=4'}}
                 style={styles.img2}/>
             </CardItem>
-          </Card>
 
-          <Card>
             <CardItem>
                 <Body>
-                  <Text>Detalles</Text>
+                  <Text style={styles.inv}>Detalles</Text>
                 </Body>
             </CardItem>
             <CardItem cardBody style={styles.card}>
               <Text>Uvuvwevwevwe Onyetenyevwe Ugwemubwem Ossas, Lorem Ipsum es simplemente el texto de relleno
-                de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
-                industrias desde el año 1500, cuando un impresor ....</Text>
+                de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar....</Text>
             </CardItem>
           </Card>
 
@@ -116,7 +115,13 @@ const styles = StyleSheet.create({
     marginLeft: 20
   },
   text: {
-    margin: 20
+    margin: 20,
+    color: 'gray'
+  },
+  text1: {
+    margin: 20,
+    color: 'green',
+    fontWeight: 'bold'
   },
   img2: {
     height: 40,
@@ -128,10 +133,10 @@ const styles = StyleSheet.create({
     marginLeft: 18,
     marginRight: 18
   },
-  view2: {
-    margin: 20
-  },
   color: {
-    color: 'blue'
+    color: 'green'
   },
+  inv: {
+    fontWeight: 'bold'
+  }
 });

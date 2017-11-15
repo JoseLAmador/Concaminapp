@@ -18,13 +18,14 @@ const Routes = () => {
         <Scene key="root">
           <Scene key="Perfil" header={null} component={Perfil} />
           <Scene key="Eventos" header={null} component={Eventos} />
-          <Scene key="NuevoEvento" header={null} component={NuevoEvento}/>
-          <Scene key="DetalleEvento" header={null} component={DetalleEvento}/>
+          <Scene key="NuevoEvento" header={null} component={NuevoEvento} />
+          <Scene key="DetalleEvento" header={null} component={DetalleEvento} />
           <Scene key="Log" header={null} component={Log} />
           <Scene key="Login" header={null} component={Login} />
           <Scene key="Recover" header={null} component={Recover} />
           <Scene key="Principal" header={null} component={Principal} initial/>
           <Scene key="Grupos" header={null} component={Grupos} />
+
         </Scene>
       </Router>
     </Root>

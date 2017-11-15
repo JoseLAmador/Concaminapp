@@ -28,6 +28,10 @@ var _Menu = require('./Menu');
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
+var _usuario = require('../../assets/imgs/usuario.jpeg');
+
+var _usuario2 = _interopRequireDefault(_usuario);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -86,7 +90,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 17
+            lineNumber: 20
           }
         },
         _react3.default.createElement(
@@ -95,13 +99,13 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
               _this2.drawer = _ref2;
             }, content: _react3.default.createElement(_Menu2.default, { navigator: this.navigator, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 21
+                lineNumber: 24
               }
             }), onClose: function onClose() {
               return _this2.closeDrawer();
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 18
+              lineNumber: 21
             }
           },
           _react3.default.createElement(
@@ -109,7 +113,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 25
+                lineNumber: 28
               }
             },
             _react3.default.createElement(
@@ -117,14 +121,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 26
+                  lineNumber: 29
                 }
               },
               _react3.default.createElement(
                 _nativeBase.CardItem,
                 { cardBody: true, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 27
+                    lineNumber: 30
                   }
                 },
                 _react3.default.createElement(
@@ -133,14 +137,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                       uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
                     }, style: styles.img, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 28
+                      lineNumber: 31
                     }
                   },
                   _react3.default.createElement(
                     _reactNative.Text,
                     { style: styles.texto, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 31
+                        lineNumber: 34
                       }
                     },
                     'Fixter Comunidad'
@@ -152,7 +156,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 34
+                    lineNumber: 37
                   }
                 },
                 _react3.default.createElement(
@@ -160,14 +164,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 35
+                      lineNumber: 38
                     }
                   },
                   _react3.default.createElement(
                     _nativeBase.Button,
                     { transparent: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 36
+                        lineNumber: 39
                       }
                     },
                     _react3.default.createElement(
@@ -175,7 +179,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 37
+                          lineNumber: 40
                         }
                       },
                       'Miembro'
@@ -187,14 +191,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 40
+                      lineNumber: 43
                     }
                   },
                   _react3.default.createElement(
                     _nativeBase.Button,
                     { transparent: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 41
+                        lineNumber: 44
                       }
                     },
                     _react3.default.createElement(
@@ -202,7 +206,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 42
+                          lineNumber: 45
                         }
                       },
                       'Agregar Miembro'
@@ -214,7 +218,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 45
+                      lineNumber: 48
                     }
                   },
                   _react3.default.createElement(
@@ -223,7 +227,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                         return _reactNativeRouterFlux.Actions.NuevoEvento();
                       }, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 46
+                        lineNumber: 49
                       }
                     },
                     _react3.default.createElement(
@@ -231,7 +235,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 47
+                          lineNumber: 50
                         }
                       },
                       'Crear Evento'
@@ -245,59 +249,39 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 53
+                  lineNumber: 56
                 }
               },
               _react3.default.createElement(
                 _nativeBase.Card,
-                {
-                  __source: {
+                { style: styles.post, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 54
+                    lineNumber: 57
                   }
                 },
                 _react3.default.createElement(
-                  _reactNative.Text,
-                  {
-                    __source: {
+                  _nativeBase.ListItem,
+                  { avatar: true, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 55
+                      lineNumber: 58
                     }
                   },
-                  'Publicar'
-                )
-              )
-            ),
-            _react3.default.createElement(
-              _nativeBase.Card,
-              { style: styles.card, __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 58
-                }
-              },
-              _react3.default.createElement(
-                _nativeBase.CardItem,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 59
-                  }
-                },
-                _react3.default.createElement(
-                  _nativeBase.Left,
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 60
-                    }
-                  },
-                  _react3.default.createElement(_nativeBase.Thumbnail, { source: {
-                      uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'
-                    }, __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 61
-                    }
-                  }),
+                  _react3.default.createElement(
+                    _nativeBase.Left,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 59
+                      }
+                    },
+                    _react3.default.createElement(_nativeBase.Thumbnail, { source: {
+                        uri: 'https://avatars2.githubusercontent.com/u/20559576?s=460&v=4'
+                      }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 60
+                      }
+                    })
+                  ),
                   _react3.default.createElement(
                     _nativeBase.Body,
                     {
@@ -306,12 +290,73 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                         lineNumber: 64
                       }
                     },
+                    _react3.default.createElement(_nativeBase.Input, { placeholder: 'Escribe algo..', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 65
+                      }
+                    })
+                  ),
+                  _react3.default.createElement(
+                    _nativeBase.Right,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 67
+                      }
+                    },
+                    _react3.default.createElement(_nativeBase.Icon, { name: 'md-more', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 68
+                      }
+                    })
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              { style: styles.card, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 74
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 75
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 76
+                    }
+                  },
+                  _react3.default.createElement(_nativeBase.Thumbnail, { source: {
+                      uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'
+                    }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 77
+                    }
+                  }),
+                  _react3.default.createElement(
+                    _nativeBase.Body,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 80
+                      }
+                    },
                     _react3.default.createElement(
                       _reactNative.Text,
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 65
+                          lineNumber: 81
                         }
                       },
                       'Fixter'
@@ -324,7 +369,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 69
+                    lineNumber: 85
                   }
                 },
                 _react3.default.createElement(
@@ -332,14 +377,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 70
+                      lineNumber: 86
                     }
                   },
                   _react3.default.createElement(_reactNative.ImageBackground, { source: {
                       uri: 'https://pbs.twimg.com/media/DM19m2yVoAAqynT.jpg'
                     }, style: styles.img, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 71
+                      lineNumber: 87
                     }
                   })
                 )
@@ -349,7 +394,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 76
+                    lineNumber: 92
                   }
                 },
                 _react3.default.createElement(
@@ -357,19 +402,19 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 77
+                      lineNumber: 93
                     }
                   },
                   _react3.default.createElement(
                     _nativeBase.Button,
                     { transparent: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 78
+                        lineNumber: 94
                       }
                     },
                     _react3.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 79
+                        lineNumber: 95
                       }
                     }),
                     _react3.default.createElement(
@@ -377,7 +422,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 80
+                          lineNumber: 96
                         }
                       },
                       '4 Comentarios'
@@ -387,7 +432,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 _react3.default.createElement(_nativeBase.Body, {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 83
+                    lineNumber: 99
                   }
                 }),
                 _react3.default.createElement(
@@ -395,7 +440,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 84
+                      lineNumber: 100
                     }
                   },
                   _react3.default.createElement(
@@ -403,7 +448,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 85
+                        lineNumber: 101
                       }
                     },
                     '30 minutos'
@@ -415,7 +460,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
               _nativeBase.Card,
               { style: styles.card, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 90
+                  lineNumber: 106
                 }
               },
               _react3.default.createElement(
@@ -423,7 +468,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 91
+                    lineNumber: 107
                   }
                 },
                 _react3.default.createElement(
@@ -431,14 +476,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 92
+                      lineNumber: 108
                     }
                   },
                   _react3.default.createElement(_nativeBase.Thumbnail, { source: {
                       uri: 'http://aldea.upp.edu.mx/ponente/imagenes.php?idp=31'
                     }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 93
+                      lineNumber: 109
                     }
                   }),
                   _react3.default.createElement(
@@ -446,7 +491,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 96
+                        lineNumber: 112
                       }
                     },
                     _react3.default.createElement(
@@ -454,7 +499,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 97
+                          lineNumber: 113
                         }
                       },
                       'Oswaldo'
@@ -467,77 +512,11 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 101
+                    lineNumber: 117
                   }
                 },
                 _react3.default.createElement(
                   _nativeBase.Body,
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 102
-                    }
-                  },
-                  _react3.default.createElement(
-                    _reactNative.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 103
-                      }
-                    },
-                    'Ya sea que juegues solo o en modo cooperativo con amigos, League of Legends es un juego muy competitivo y r\xE1pido con acci\xF3n y estrategia dise\xF1ado para aquellos que ans\xEDan una victoria bien merecida. #Fit&Geek'
-                  )
-                )
-              ),
-              _react3.default.createElement(
-                _nativeBase.CardItem,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 110
-                  }
-                },
-                _react3.default.createElement(
-                  _nativeBase.Left,
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 111
-                    }
-                  },
-                  _react3.default.createElement(
-                    _nativeBase.Button,
-                    { transparent: true, __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 112
-                      }
-                    },
-                    _react3.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 113
-                      }
-                    }),
-                    _react3.default.createElement(
-                      _reactNative.Text,
-                      {
-                        __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 114
-                        }
-                      },
-                      '7 Comentarios'
-                    )
-                  )
-                ),
-                _react3.default.createElement(_nativeBase.Body, {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 117
-                  }
-                }),
-                _react3.default.createElement(
-                  _nativeBase.Right,
                   {
                     __source: {
                       fileName: _jsxFileName,
@@ -552,6 +531,72 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                         lineNumber: 119
                       }
                     },
+                    'Ya sea que juegues solo o en modo cooperativo con amigos, League of Legends es un juego muy competitivo y r\xE1pido con acci\xF3n y estrategia dise\xF1ado para aquellos que ans\xEDan una victoria bien merecida. #Fit&Geek'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.CardItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 126
+                  }
+                },
+                _react3.default.createElement(
+                  _nativeBase.Left,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 127
+                    }
+                  },
+                  _react3.default.createElement(
+                    _nativeBase.Button,
+                    { transparent: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 128
+                      }
+                    },
+                    _react3.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 129
+                      }
+                    }),
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 130
+                        }
+                      },
+                      '7 Comentarios'
+                    )
+                  )
+                ),
+                _react3.default.createElement(_nativeBase.Body, {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 133
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Right,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 134
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 135
+                      }
+                    },
                     '45 minutos'
                   )
                 )
@@ -561,7 +606,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
               _nativeBase.Card,
               { style: styles.card, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 124
+                  lineNumber: 140
                 }
               },
               _react3.default.createElement(
@@ -569,7 +614,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 125
+                    lineNumber: 141
                   }
                 },
                 _react3.default.createElement(
@@ -577,14 +622,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 126
+                      lineNumber: 142
                     }
                   },
                   _react3.default.createElement(_nativeBase.Thumbnail, { source: {
                       uri: 'http://blog.fixter.org/content/images/2017/04/bliss-1.jpg'
                     }, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 127
+                      lineNumber: 143
                     }
                   }),
                   _react3.default.createElement(
@@ -592,7 +637,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 130
+                        lineNumber: 146
                       }
                     },
                     _react3.default.createElement(
@@ -600,7 +645,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 131
+                          lineNumber: 147
                         }
                       },
                       'Hector Bliss'
@@ -613,7 +658,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 135
+                    lineNumber: 151
                   }
                 },
                 _react3.default.createElement(
@@ -621,14 +666,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 136
+                      lineNumber: 152
                     }
                   },
                   _react3.default.createElement(_reactNative.ImageBackground, { source: {
                       uri: 'https://i.ytimg.com/vi/Q3YeO1tufb4/maxresdefault.jpg'
                     }, style: styles.img, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 137
+                      lineNumber: 153
                     }
                   }),
                   _react3.default.createElement(
@@ -636,7 +681,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 140
+                        lineNumber: 156
                       }
                     },
                     'Aprovecha est\xE1 gran oportunidad!, inscr\xEDbete hoy y obt\xE9n el descuento del 20% ---> www.fixter.camp'
@@ -648,7 +693,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 146
+                    lineNumber: 162
                   }
                 },
                 _react3.default.createElement(
@@ -656,19 +701,19 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 147
+                      lineNumber: 163
                     }
                   },
                   _react3.default.createElement(
                     _nativeBase.Button,
                     { transparent: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 148
+                        lineNumber: 164
                       }
                     },
                     _react3.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 149
+                        lineNumber: 165
                       }
                     }),
                     _react3.default.createElement(
@@ -676,7 +721,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                       {
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 150
+                          lineNumber: 166
                         }
                       },
                       '12 Comentarios'
@@ -686,7 +731,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 _react3.default.createElement(_nativeBase.Body, {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 153
+                    lineNumber: 169
                   }
                 }),
                 _react3.default.createElement(
@@ -694,7 +739,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 154
+                      lineNumber: 170
                     }
                   },
                   _react3.default.createElement(
@@ -702,7 +747,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 155
+                        lineNumber: 171
                       }
                     },
                     '1 hora'
@@ -713,7 +758,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
           ),
           _react3.default.createElement(_Pie2.default, { abrir: this.openDrawer, __source: {
               fileName: _jsxFileName,
-              lineNumber: 160
+              lineNumber: 176
             }
           })
         )
@@ -740,5 +785,10 @@ var styles = _reactNative.StyleSheet.create({
   },
   card: {
     flex: 0
+  },
+  post: {
+    height: 80,
+    flexDirection: 'column',
+    justifyContent: 'center'
   }
 });

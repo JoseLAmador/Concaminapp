@@ -79,22 +79,22 @@ var PostsList = _wrapComponent('PostsList')(function (_Component) {
                 {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 18
+                        lineNumber: 17
                     }
                 },
                 _react3.default.createElement(_reactNative.StatusBar, { backgroundColor: 'green', barStyle: 'light-content', __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 19
+                        lineNumber: 18
                     }
                 }),
-                post.map(function (post, index) {
+                post.reverse().map(function (post, index) {
                     return _react3.default.createElement(_Card2.default, {
                         key: index,
                         index: index,
                         post: post,
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 21
+                            lineNumber: 20
                         }
                     });
                 })
