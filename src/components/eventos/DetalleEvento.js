@@ -12,7 +12,7 @@ export default class DetalleEvento extends Component {
             }} style={styles.img}/>
 
           <View style={styles.view}>
-            <Text style={{marginLeft: 20}}>OCT {'\n'}28</Text>
+            <Text style={styles.textFecha}>OCT {'\n'}28</Text>
             <Text style={styles.titulo}>Desempance o que perros??</Text>
           </View>
 
@@ -22,15 +22,15 @@ export default class DetalleEvento extends Component {
             </ListItem>
           </List>
 
-          <View style={{flexDirection: 'row'}}>
+          <View style={styles.view}>
             <Left>
-              <Text style={{margin: 20}}>ME INTERESA</Text>
+              <Text style={styles.text}>ME INTERESA</Text>
             </Left>
             <Body>
-              <Text style={{margin: 20}}>ASISTIRE</Text>
+              <Text style={styles.text}>ASISTIRE</Text>
             </Body>
             <Right>
-              <Text style={{margin: 20}}>IGNORAR</Text>
+              <Text style={styles.text}>IGNORAR</Text>
             </Right>
           </View>
 
@@ -66,13 +66,13 @@ export default class DetalleEvento extends Component {
             </CardItem>
             <CardItem cardBody>
               <Image source={{uri: 'https://avatars2.githubusercontent.com/u/20559576?s=460&v=4'}}
-                style={{height: 40, width: 40, marginLeft: 15, marginBottom: 15}}/>
+                style={styles.img2}/>
               <Image source={{uri: 'https://avatars1.githubusercontent.com/u/15187254?s=460&v=4'}}
-                style={{height: 40, width: 40, marginLeft: 15, marginBottom: 15}}/>
+                style={styles.img2}/>
               <Image source={{uri: 'https://avatars0.githubusercontent.com/u/29002976?s=460&v=4'}}
-                style={{height: 40, width: 40, marginLeft: 15, marginBottom: 15}}/>
+                style={styles.img2}/>
               <Image source={{uri: 'https://avatars2.githubusercontent.com/u/6130385?s=460&v=4'}}
-                style={{height: 40, width: 40, marginLeft: 15, marginBottom: 15}}/>
+                style={styles.img2}/>
             </CardItem>
           </Card>
 
@@ -82,7 +82,7 @@ export default class DetalleEvento extends Component {
                   <Text>Detalles</Text>
                 </Body>
             </CardItem>
-            <CardItem cardBody style={{marginLeft: 18, marginRight: 18}}>
+            <CardItem cardBody style={styles.card}>
               <Text>Uvuvwevwevwe Onyetenyevwe Ugwemubwem Ossas, Lorem Ipsum es simplemente el texto de relleno
                 de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
                 industrias desde el año 1500, cuando un impresor ....</Text>
@@ -103,17 +103,30 @@ const styles = StyleSheet.create({
     height: 200,
     width: '100%'
   },
+  view: {
+    flexDirection: 'row'
+  },
+  textFecha: {
+    marginLeft: 20,
+    marginTop: 10
+  },
   titulo: {
     fontSize: 25,
     marginRight: 80,
     marginLeft: 20
   },
-  view: {
-    flexDirection: 'row'
+  text: {
+    margin: 20
   },
-  view1: {
-    flexDirection: 'row',
-    alignSelf: 'center'
+  img2: {
+    height: 40,
+    width: 40,
+    marginLeft: 15,
+    marginBottom: 15
+  },
+  card: {
+    marginLeft: 18,
+    marginRight: 18
   },
   view2: {
     margin: 20

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {Header, Icon, Item, Input, Button} from 'native-base';
+import {Header, Icon} from 'native-base';
 import {Actions} from 'react-native-router-flux';
 
 const PieS = (props) => {
@@ -32,14 +32,5 @@ const styles = StyleSheet.create({
   color: {
     color: "white",
     fontSize: 35
-  },
-  item: {
-    alignSelf: 'center'
-  },
-  icon: {
-    color: "#000"
-  },
-  input: {
-    borderRadius: 50
   }
 });

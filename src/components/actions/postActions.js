@@ -1,11 +1,10 @@
 import firebase from '../../components/firebase/Firebase'
 import {POST_FETCH_SUCCESS} from './types';
 
-export const postFetch = () =>{
-    return (dispatch) => {
-        firebase.database().ref(`/posts`)
-            .on('value', snapshot =>{
-                dispatch({type: POST_FETCH_SUCCESS, payload: snapshot.val()})
-            });
-    }
+export const postFetch = () => {
+  return(dispatch) => {
+    firebase.database().ref(`/posts`).on('value', snapshot => {
+      dispatch({type: POST_FETCH_SUCCESS, payload: snapshot.val()})
+    });
+  }
 };

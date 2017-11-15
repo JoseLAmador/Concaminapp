@@ -3,13 +3,15 @@ import {connect} from 'react-redux';
 import {StatusBar} from 'react-native';
 import Card from './Card';
 import {Content} from 'native-base';
-import {postFetch} from "../actions/postActions";
+import {postFetch} from '../actions/postActions';
 
 class PostsList extends Component {
+  componentWillMount(){
+    this.props.postFetch()
+  }
 
-    componentWillMount(){
-        this.props.postFetch()
-    }
+  render(){
+    const {post} = this.props;
 
     render(){
         const {post} = this.props;
