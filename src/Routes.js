@@ -10,7 +10,6 @@ import NuevoEvento from './components/eventos/NuevoEvento';
 import Principal from './components/principal/Principal';
 import Grupos from './components/principal/Grupos';
 import DetalleEvento from './components/eventos/DetalleEvento';
-import Amigos from './components/amigos/Amigos';
 
 const Routes = () => {
   return (
@@ -26,7 +25,6 @@ const Routes = () => {
           <Scene key="Recover" header={null} component={Recover} />
           <Scene key="Principal" header={null} component={Principal} initial/>
           <Scene key="Grupos" header={null} component={Grupos} />
-          <Scene key="Amigos" header={null} component={Amigos} />
         </Scene>
       </Router>
     </Root>
