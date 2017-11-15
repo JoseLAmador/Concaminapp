@@ -5,11 +5,13 @@ import img2 from '../../assets/imgs/usuario.jpeg';
 import img from '../../assets/imgs/fondo.jpg';
 import {Actions} from 'react-native-router-flux';
 import img3 from '../../assets/imgs/mr.jpg';
+import Cabecera from '../header/Cabecera';
 
 export default class Perfil extends Component {
   render() {
     return (
       <Container style={styles.container}>
+      <Cabecera/>
       <Content>
 
         <Image source={img} style={styles.img}/>
