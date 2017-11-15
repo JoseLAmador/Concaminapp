@@ -13,6 +13,10 @@ export default class NuevoEvento extends Component {
       <Container style={styles.container}>
       <Cabecera/>
       <Content style={styles.back}>
+        <Image source={{
+            uri: 'https://raw.githubusercontent.com/SaulSandovalM/Kopi/master/app/src/main/res/drawable/add_btn.png'
+          }} style={styles.img}/>
+
         <Input
           name="Nombre"
           placeholder='Nombre del evento'
@@ -23,26 +27,26 @@ export default class NuevoEvento extends Component {
           <ListItem>
             <Left>
               <Icon name='calendar'/>
-              <Text style={{marginLeft: 10}}>Fecha</Text>
+              <Text style={styles.text}>Fecha</Text>
             </Left>
             <Right/>
           </ListItem>
           <ListItem>
             <Left>
               <Icon name='map'/>
-              <Text style={{marginLeft: 10}}>Ubicacion</Text>
+              <Text style={styles.text}>Ubicacion</Text>
+            </Left>
+          </ListItem>
+          <ListItem>
+            <Left>
+              <Icon name='brush'/>
+              <Text style={styles.text}>Detalles</Text>
             </Left>
           </ListItem>
           <ListItem>
             <Left>
               <Icon name='person'/>
-              <Text style={{marginLeft: 10}}>Detalles</Text>
-            </Left>
-          </ListItem>
-          <ListItem>
-            <Left>
-              <Icon name='person'/>
-              <Text style={{marginLeft: 10}}>Los invitados pueden invitar amigos</Text>
+              <Text style={styles.text}>Los invitados pueden invitar amigos</Text>
             </Left>
             <Right>
             <CheckBox checked={true}/>
@@ -51,13 +55,13 @@ export default class NuevoEvento extends Component {
           <ListItem>
             <Left>
               <Icon name='person'/>
-              <Text style={{marginLeft: 10}}>Otros Organizadores</Text>
+              <Text style={styles.text}>Otros Organizadores</Text>
             </Left>
           </ListItem>
         </List>
 
       </Content>
-      <Button block style={{width: '100%'}} onPress={() => Actions.Eventos()}><Text>CREAR</Text></Button>
+      <Button block style={styles.button} onPress={() => Actions.Eventos()}><Text>CREAR</Text></Button>
     </Container>
     );
   }
@@ -66,5 +70,16 @@ export default class NuevoEvento extends Component {
 const styles = StyleSheet.create({
   back: {
     backgroundColor: 'white'
+  },
+  text: {
+    marginLeft: 10
+  },
+  img: {
+    height: 200,
+    width: '100%'
+  },
+  button: {
+    width: '100%',
+    backgroundColor: 'green'
   }
 });
