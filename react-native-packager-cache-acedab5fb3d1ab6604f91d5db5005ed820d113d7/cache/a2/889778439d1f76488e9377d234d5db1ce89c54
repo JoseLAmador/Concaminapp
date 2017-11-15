@@ -122,8 +122,9 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               },
               _react3.default.createElement(
                 _nativeBase.ListItem,
-                {
-                  __source: {
+                { onPress: function onPress() {
+                    return _reactNativeRouterFlux.Actions.DetalleEvento();
+                  }, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 20
                   }

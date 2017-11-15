@@ -92,26 +92,26 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
           },
           _react3.default.createElement(_reactNative.Image, { source: _fondo2.default, style: styles.img, __source: {
               fileName: _jsxFileName,
-              lineNumber: 15
+              lineNumber: 16
             }
           }),
           _react3.default.createElement(
             _reactNative.View,
             { style: styles.view, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 16
+                lineNumber: 17
               }
             },
             _react3.default.createElement(
               _reactNative.View,
               { style: styles.view, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 17
+                  lineNumber: 18
                 }
               },
               _react3.default.createElement(_nativeBase.Thumbnail, { source: _usuario2.default, style: styles.thub, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 18
+                  lineNumber: 19
                 }
               })
             ),
@@ -119,7 +119,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               _nativeBase.H1,
               { style: styles.h1, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 20
+                  lineNumber: 21
                 }
               },
               'Saul Sandoval M'
@@ -128,7 +128,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               _reactNative.Text,
               { style: styles.text, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 21
+                  lineNumber: 22
                 }
               },
               'sauldevelop@gmail.com'
@@ -138,14 +138,14 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 22
+                  lineNumber: 23
                 }
               },
               _react3.default.createElement(
                 _reactNative.Text,
                 { style: styles.texto, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 23
+                    lineNumber: 24
                   }
                 },
                 'Hello World! Soy Sa\xFAl, fan de las pel\xEDculas y los videojuegos, idealista, hacker, y este es mi hogar'
@@ -156,7 +156,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
             _reactNative.View,
             { style: styles.view2, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 28
+                lineNumber: 29
               }
             },
             _react3.default.createElement(
@@ -164,14 +164,14 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 29
+                  lineNumber: 30
                 }
               },
               _react3.default.createElement(
                 _reactNative.Text,
                 { style: styles.texto, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 30
+                    lineNumber: 31
                   }
                 },
                 '0',
@@ -181,7 +181,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 30
+                      lineNumber: 31
                     }
                   },
                   'Quien ha visitado tu perfil'
@@ -193,14 +193,14 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 32
+                  lineNumber: 33
                 }
               },
               _react3.default.createElement(
                 _reactNative.Text,
                 { style: styles.texto, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 33
+                    lineNumber: 34
                   }
                 },
                 '0',
@@ -210,41 +210,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 33
+                      lineNumber: 34
                     }
                   },
                   'Visualizaciones de publicaciones'
                 )
               )
-            ),
-            _react3.default.createElement(
-              _nativeBase.Card,
-              {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 35
-                }
-              },
-              _react3.default.createElement(
-                _reactNative.Text,
-                { style: styles.texto, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 36
-                  }
-                },
-                '0',
-                '\n',
-                _react3.default.createElement(
-                  _reactNative.Text,
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 36
-                    }
-                  },
-                  'Apariciones en busquedas'
-                )
-              )
             )
           ),
           _react3.default.createElement(
@@ -252,7 +223,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 40
+                lineNumber: 38
               }
             },
             _react3.default.createElement(
@@ -260,7 +231,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 41
+                  lineNumber: 39
                 }
               },
               _react3.default.createElement(
@@ -268,7 +239,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 42
+                    lineNumber: 40
                   }
                 },
                 _react3.default.createElement(
@@ -276,7 +247,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 43
+                      lineNumber: 41
                     }
                   },
                   _react3.default.createElement(
@@ -284,7 +255,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 44
+                        lineNumber: 42
                       }
                     },
                     'Saul Sandoval M'
@@ -293,7 +264,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     _reactNative.Text,
                     { note: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 45
+                        lineNumber: 43
                       }
                     },
                     'April 15, 2016'
@@ -306,7 +277,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 49
+                  lineNumber: 47
                 }
               },
               _react3.default.createElement(
@@ -314,12 +285,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 50
+                    lineNumber: 48
                   }
                 },
                 _react3.default.createElement(_reactNative.Image, { source: _mr2.default, style: styles.img2, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 51
+                    lineNumber: 49
                   }
                 }),
                 _react3.default.createElement(
@@ -327,7 +298,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 52
+                      lineNumber: 50
                     }
                   },
                   'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno est\xE1ndar de las industrias desde el a\xF1o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta).'
@@ -339,7 +310,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 59
+                  lineNumber: 57
                 }
               },
               _react3.default.createElement(
@@ -347,19 +318,19 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 60
+                    lineNumber: 58
                   }
                 },
                 _react3.default.createElement(
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 61
+                      lineNumber: 59
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 62
+                      lineNumber: 60
                     }
                   }),
                   _react3.default.createElement(
@@ -367,7 +338,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 63
+                        lineNumber: 61
                       }
                     },
                     'Me Gusta'
@@ -377,12 +348,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 65
+                      lineNumber: 63
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 66
+                      lineNumber: 64
                     }
                   }),
                   _react3.default.createElement(
@@ -390,7 +361,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 67
+                        lineNumber: 65
                       }
                     },
                     'Comentarios'
@@ -404,7 +375,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 73
+                lineNumber: 71
               }
             },
             _react3.default.createElement(
@@ -412,7 +383,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 74
+                  lineNumber: 72
                 }
               },
               _react3.default.createElement(
@@ -420,7 +391,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 75
+                    lineNumber: 73
                   }
                 },
                 _react3.default.createElement(
@@ -428,7 +399,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 76
+                      lineNumber: 74
                     }
                   },
                   _react3.default.createElement(
@@ -436,7 +407,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 77
+                        lineNumber: 75
                       }
                     },
                     'Saul Sandoval M'
@@ -445,7 +416,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     _reactNative.Text,
                     { note: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 78
+                        lineNumber: 76
                       }
                     },
                     'April 15, 2016'
@@ -458,7 +429,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 82
+                  lineNumber: 80
                 }
               },
               _react3.default.createElement(
@@ -466,12 +437,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 83
+                    lineNumber: 81
                   }
                 },
                 _react3.default.createElement(_reactNative.Image, { source: _mr2.default, style: styles.img2, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 84
+                    lineNumber: 82
                   }
                 }),
                 _react3.default.createElement(
@@ -479,7 +450,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 85
+                      lineNumber: 83
                     }
                   },
                   'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno est\xE1ndar de las industrias desde el a\xF1o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta).'
@@ -491,7 +462,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 92
+                  lineNumber: 90
                 }
               },
               _react3.default.createElement(
@@ -499,19 +470,19 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 93
+                    lineNumber: 91
                   }
                 },
                 _react3.default.createElement(
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 94
+                      lineNumber: 92
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 95
+                      lineNumber: 93
                     }
                   }),
                   _react3.default.createElement(
@@ -519,7 +490,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 96
+                        lineNumber: 94
                       }
                     },
                     'Me Gusta'
@@ -529,12 +500,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 98
+                      lineNumber: 96
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 99
+                      lineNumber: 97
                     }
                   }),
                   _react3.default.createElement(
@@ -542,7 +513,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 100
+                        lineNumber: 98
                       }
                     },
                     'Comentarios'
@@ -556,7 +527,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 106
+                lineNumber: 104
               }
             },
             _react3.default.createElement(
@@ -564,7 +535,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 107
+                  lineNumber: 105
                 }
               },
               _react3.default.createElement(
@@ -572,7 +543,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 108
+                    lineNumber: 106
                   }
                 },
                 _react3.default.createElement(
@@ -580,7 +551,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 109
+                      lineNumber: 107
                     }
                   },
                   _react3.default.createElement(
@@ -588,7 +559,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 110
+                        lineNumber: 108
                       }
                     },
                     'Saul Sandoval M'
@@ -597,7 +568,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     _reactNative.Text,
                     { note: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 111
+                        lineNumber: 109
                       }
                     },
                     'April 15, 2016'
@@ -610,7 +581,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 115
+                  lineNumber: 113
                 }
               },
               _react3.default.createElement(
@@ -618,12 +589,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 116
+                    lineNumber: 114
                   }
                 },
                 _react3.default.createElement(_reactNative.Image, { source: _mr2.default, style: styles.img2, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 117
+                    lineNumber: 115
                   }
                 }),
                 _react3.default.createElement(
@@ -631,7 +602,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 118
+                      lineNumber: 116
                     }
                   },
                   'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno est\xE1ndar de las industrias desde el a\xF1o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta).'
@@ -643,7 +614,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 125
+                  lineNumber: 123
                 }
               },
               _react3.default.createElement(
@@ -651,19 +622,19 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 126
+                    lineNumber: 124
                   }
                 },
                 _react3.default.createElement(
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 127
+                      lineNumber: 125
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 128
+                      lineNumber: 126
                     }
                   }),
                   _react3.default.createElement(
@@ -671,7 +642,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 129
+                        lineNumber: 127
                       }
                     },
                     'Me Gusta'
@@ -681,12 +652,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 131
+                      lineNumber: 129
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 132
+                      lineNumber: 130
                     }
                   }),
                   _react3.default.createElement(
@@ -694,7 +665,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 133
+                        lineNumber: 131
                       }
                     },
                     'Comentarios'
@@ -708,7 +679,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 139
+                lineNumber: 137
               }
             },
             _react3.default.createElement(
@@ -716,7 +687,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 140
+                  lineNumber: 138
                 }
               },
               _react3.default.createElement(
@@ -724,7 +695,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 141
+                    lineNumber: 139
                   }
                 },
                 _react3.default.createElement(
@@ -732,7 +703,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 142
+                      lineNumber: 140
                     }
                   },
                   _react3.default.createElement(
@@ -740,7 +711,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 143
+                        lineNumber: 141
                       }
                     },
                     'Saul Sandoval M'
@@ -749,7 +720,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     _reactNative.Text,
                     { note: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 144
+                        lineNumber: 142
                       }
                     },
                     'April 15, 2016'
@@ -762,7 +733,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 148
+                  lineNumber: 146
                 }
               },
               _react3.default.createElement(
@@ -770,12 +741,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 149
+                    lineNumber: 147
                   }
                 },
                 _react3.default.createElement(_reactNative.Image, { source: _mr2.default, style: styles.img2, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 150
+                    lineNumber: 148
                   }
                 }),
                 _react3.default.createElement(
@@ -783,7 +754,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 151
+                      lineNumber: 149
                     }
                   },
                   'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno est\xE1ndar de las industrias desde el a\xF1o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta).'
@@ -795,7 +766,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 158
+                  lineNumber: 156
                 }
               },
               _react3.default.createElement(
@@ -803,19 +774,19 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 159
+                    lineNumber: 157
                   }
                 },
                 _react3.default.createElement(
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 160
+                      lineNumber: 158
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 161
+                      lineNumber: 159
                     }
                   }),
                   _react3.default.createElement(
@@ -823,7 +794,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 162
+                        lineNumber: 160
                       }
                     },
                     'Me Gusta'
@@ -833,12 +804,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 164
+                      lineNumber: 162
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 165
+                      lineNumber: 163
                     }
                   }),
                   _react3.default.createElement(
@@ -846,7 +817,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 166
+                        lineNumber: 164
                       }
                     },
                     'Comentarios'
@@ -860,7 +831,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 172
+                lineNumber: 170
               }
             },
             _react3.default.createElement(
@@ -868,7 +839,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 173
+                  lineNumber: 171
                 }
               },
               _react3.default.createElement(
@@ -876,7 +847,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 174
+                    lineNumber: 172
                   }
                 },
                 _react3.default.createElement(
@@ -884,7 +855,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 175
+                      lineNumber: 173
                     }
                   },
                   _react3.default.createElement(
@@ -892,7 +863,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 176
+                        lineNumber: 174
                       }
                     },
                     'Saul Sandoval M'
@@ -901,7 +872,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     _reactNative.Text,
                     { note: true, __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 177
+                        lineNumber: 175
                       }
                     },
                     'April 15, 2016'
@@ -914,7 +885,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 181
+                  lineNumber: 179
                 }
               },
               _react3.default.createElement(
@@ -922,12 +893,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 182
+                    lineNumber: 180
                   }
                 },
                 _react3.default.createElement(_reactNative.Image, { source: _mr2.default, style: styles.img2, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 183
+                    lineNumber: 181
                   }
                 }),
                 _react3.default.createElement(
@@ -935,7 +906,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 184
+                      lineNumber: 182
                     }
                   },
                   'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno est\xE1ndar de las industrias desde el a\xF1o 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta).'
@@ -947,7 +918,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 191
+                  lineNumber: 189
                 }
               },
               _react3.default.createElement(
@@ -955,19 +926,19 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 192
+                    lineNumber: 190
                   }
                 },
                 _react3.default.createElement(
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 193
+                      lineNumber: 191
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 194
+                      lineNumber: 192
                     }
                   }),
                   _react3.default.createElement(
@@ -975,7 +946,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 195
+                        lineNumber: 193
                       }
                     },
                     'Me Gusta'
@@ -985,12 +956,12 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                   _nativeBase.Button,
                   { transparent: true, textStyle: styles.color, __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 197
+                      lineNumber: 195
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, { name: 'heart', __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 198
+                      lineNumber: 196
                     }
                   }),
                   _react3.default.createElement(
@@ -998,7 +969,7 @@ var Perfil = _wrapComponent('Perfil')(function (_Component) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 199
+                        lineNumber: 197
                       }
                     },
                     'Comentarios'
@@ -1037,8 +1008,7 @@ var styles = _reactNative.StyleSheet.create({
   img: {
     flex: 2,
     height: 200,
-    width: null,
-    opacity: 15
+    width: null
   },
   container: {
     backgroundColor: 'white'

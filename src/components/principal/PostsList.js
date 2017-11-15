@@ -17,7 +17,7 @@ class PostsList extends Component {
 
             <Content>
                 <StatusBar backgroundColor="green" barStyle="light-content"/>
-                {post.map((post, index)=>{
+                {post.reverse().map((post, index)=>{
                     return <Card
                         key={index}
                         index={index}
