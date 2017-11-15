@@ -10,9 +10,6 @@ class PostsList extends Component {
     this.props.postFetch()
   }
 
-  render(){
-    const {post} = this.props;
-
     render(){
         const {post} = this.props;
         return(

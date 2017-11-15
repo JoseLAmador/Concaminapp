@@ -88,7 +88,7 @@ var DetalleEvento = _wrapComponent('DetalleEvento')(function (_Component) {
             },
             _react3.default.createElement(
               _reactNative.Text,
-              { style: { marginLeft: 20 }, __source: {
+              { style: styles.textFecha, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 15
                 }
@@ -137,7 +137,7 @@ var DetalleEvento = _wrapComponent('DetalleEvento')(function (_Component) {
           ),
           _react3.default.createElement(
             _reactNative.View,
-            { style: { flexDirection: 'row' }, __source: {
+            { style: styles.view, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 25
               }
@@ -152,7 +152,7 @@ var DetalleEvento = _wrapComponent('DetalleEvento')(function (_Component) {
               },
               _react3.default.createElement(
                 _reactNative.Text,
-                { style: { margin: 20 }, __source: {
+                { style: styles.text, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 27
                   }
@@ -170,7 +170,7 @@ var DetalleEvento = _wrapComponent('DetalleEvento')(function (_Component) {
               },
               _react3.default.createElement(
                 _reactNative.Text,
-                { style: { margin: 20 }, __source: {
+                { style: styles.text, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 30
                   }
@@ -188,7 +188,7 @@ var DetalleEvento = _wrapComponent('DetalleEvento')(function (_Component) {
               },
               _react3.default.createElement(
                 _reactNative.Text,
-                { style: { margin: 20 }, __source: {
+                { style: styles.text, __source: {
                     fileName: _jsxFileName,
                     lineNumber: 33
                   }
@@ -344,25 +344,25 @@ var DetalleEvento = _wrapComponent('DetalleEvento')(function (_Component) {
                 }
               },
               _react3.default.createElement(_reactNative.Image, { source: { uri: 'https://avatars2.githubusercontent.com/u/20559576?s=460&v=4' },
-                style: { height: 40, width: 40, marginLeft: 15, marginBottom: 15 }, __source: {
+                style: styles.img2, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 68
                 }
               }),
               _react3.default.createElement(_reactNative.Image, { source: { uri: 'https://avatars1.githubusercontent.com/u/15187254?s=460&v=4' },
-                style: { height: 40, width: 40, marginLeft: 15, marginBottom: 15 }, __source: {
+                style: styles.img2, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 70
                 }
               }),
               _react3.default.createElement(_reactNative.Image, { source: { uri: 'https://avatars0.githubusercontent.com/u/29002976?s=460&v=4' },
-                style: { height: 40, width: 40, marginLeft: 15, marginBottom: 15 }, __source: {
+                style: styles.img2, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 72
                 }
               }),
               _react3.default.createElement(_reactNative.Image, { source: { uri: 'https://avatars2.githubusercontent.com/u/6130385?s=460&v=4' },
-                style: { height: 40, width: 40, marginLeft: 15, marginBottom: 15 }, __source: {
+                style: styles.img2, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 74
                 }
@@ -407,7 +407,7 @@ var DetalleEvento = _wrapComponent('DetalleEvento')(function (_Component) {
             ),
             _react3.default.createElement(
               _nativeBase.CardItem,
-              { cardBody: true, style: { marginLeft: 18, marginRight: 18 }, __source: {
+              { cardBody: true, style: styles.card, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 85
                 }
@@ -443,17 +443,30 @@ var styles = _reactNative.StyleSheet.create({
     height: 200,
     width: '100%'
   },
+  view: {
+    flexDirection: 'row'
+  },
+  textFecha: {
+    marginLeft: 20,
+    marginTop: 10
+  },
   titulo: {
     fontSize: 25,
     marginRight: 80,
     marginLeft: 20
   },
-  view: {
-    flexDirection: 'row'
+  text: {
+    margin: 20
   },
-  view1: {
-    flexDirection: 'row',
-    alignSelf: 'center'
+  img2: {
+    height: 40,
+    width: 40,
+    marginLeft: 15,
+    marginBottom: 15
+  },
+  card: {
+    marginLeft: 18,
+    marginRight: 18
   },
   view2: {
     margin: 20

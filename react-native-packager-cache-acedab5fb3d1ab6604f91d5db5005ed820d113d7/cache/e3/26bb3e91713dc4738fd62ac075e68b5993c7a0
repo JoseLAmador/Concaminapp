@@ -114,12 +114,13 @@ var Principal = _wrapComponent('Principal')(function (_Component) {
       var search = this.props.search;
       var results = this.state.results;
 
+
       return _react3.default.createElement(
         _nativeBase.Container,
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 40
+            lineNumber: 46
           }
         },
         _react3.default.createElement(
@@ -128,39 +129,39 @@ var Principal = _wrapComponent('Principal')(function (_Component) {
               _this2.drawer = _ref;
             }, content: _react3.default.createElement(_Menu2.default, { navigator: this.navigator, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 44
+                lineNumber: 50
               }
             }), onClose: function onClose() {
               return _this2.closeDrawer();
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 41
+              lineNumber: 47
             }
           },
+          _react3.default.createElement(_Pie2.default, { abrir: this.openDrawer, onSearch: this.onSearch, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 55
+            }
+          }),
           _react3.default.createElement(
             _nativeBase.Content,
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 48
+                lineNumber: 57
               }
             },
             !search ? _react3.default.createElement(_PostsList2.default, {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 53
+                lineNumber: 60
               }
             }) : _react3.default.createElement(_ResultPost.ResultPost, { results: results, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 55
+                lineNumber: 61
               }
             })
-          ),
-          _react3.default.createElement(_Pie2.default, { abrir: this.openDrawer, onSearch: this.onSearch, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 59
-            }
-          })
+          )
         )
       );
     }

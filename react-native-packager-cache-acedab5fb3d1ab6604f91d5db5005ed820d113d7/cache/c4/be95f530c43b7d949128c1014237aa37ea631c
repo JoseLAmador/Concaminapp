@@ -281,7 +281,9 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
             ),
             _react3.default.createElement(
               _nativeBase.ListItem,
-              { icon: true, __source: {
+              { icon: true, onPress: function onPress() {
+                  return _reactNativeRouterFlux.Actions.Amigos();
+                }, __source: {
                   fileName: _jsxFileName,
                   lineNumber: 52
                 }
