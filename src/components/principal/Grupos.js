@@ -8,7 +8,7 @@ import img from '../../assets/imgs/usuario.jpeg';
 import {postFetch} from '../actions/postActions';
 import {connect} from 'react-redux';
 import Card from './Card';
-import EncabezadoG from "./EncabezadoG";
+import EncabezadoG from './EncabezadoG';
 
 class Grupos extends Component {
   closeDrawer = () => {
@@ -20,90 +20,85 @@ class Grupos extends Component {
   };
 
   render() {
-      const {post} = this.props;
+    const {post} = this.props;
     return (
       <Container>
         <Drawer ref={(ref) => {
             this.drawer = ref;
-        }} content={
-            <Menu navigator = {
-              this.navigator
-            }/>
-          } onClose={() => this.closeDrawer()}>
+          }} content={
+              <Menu navigator = {
+                  this.navigator
+              } />
+            } onClose={() => this.closeDrawer()}>
+
           <EncabezadoG abrir={this.openDrawer}/>
-      <Content>
-        <StatusBar backgroundColor="green" barStyle="light-content"/>
-          <CardItem cardBody>
-            <ImageBackground source={{
-                uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
-              }} style={styles.img}>
-            </ImageBackground>
-          </CardItem>
-          <View style={styles.miembros}>
+          <Content>
+            <StatusBar backgroundColor="green" barStyle="light-content"/>
+            <CardItem cardBody>
+              <ImageBackground source={{
+                  uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
+                }} style={styles.img}></ImageBackground>
+            </CardItem>
+            <View style={styles.miembros}>
 
               <View style={styles.vnew}>
                 <Icon name="md-checkmark" style={styles.iconC}/>
                 <Text>Miembro</Text>
               </View>
 
-
               <View style={styles.vnew}>
                 <Icon name="ios-people" style={styles.icons}/>
                 <Text>Agregar Miembro</Text>
               </View>
 
-
-              <View onPress={()=> Actions.NuevoEvento()} style={styles.vnew}>
-                <Icon name="ios-calendar" style={styles.icons}/>
+              <View style={styles.vnew}>
+                <Icon name="ios-calendar" style={styles.icons} onPress={() => Actions.NuevoEvento()}/>
                 <Text>Crear Evento</Text>
               </View>
-          </View>
+            </View>
 
+            {/*<View>
+            <Card style={styles.post}>
+              <ListItem avatar>
+                <Left>
+                  <Thumbnail source={{
+                      uri: 'https://avatars2.githubusercontent.com/u/20559576?s=460&v=4'
+                    }} />
+                </Left>
+                <Body>
+                  <Input placeholder="Escribe algo.."/>
+                </Body>
+                <Right>
+                  <Icon name="md-more"/>
+                </Right>
+              </ListItem>
+            </Card>
+          </View>*/}
 
-       {/*<View>
-          <Card style={styles.post}>
-            <ListItem avatar>
-              <Left>
-                <Thumbnail source={{
-                    uri: 'https://avatars2.githubusercontent.com/u/20559576?s=460&v=4'
-                  }} />
-              </Left>
-              <Body>
-                <Input placeholder="Escribe algo.."/>
-              </Body>
-              <Right>
-                <Icon name="md-more"/>
-              </Right>
-            </ListItem>
-          </Card>
-        </View>*/}
+            {
+              post.reverse().map((post, index) => {
+                return <Card key={index} index={index} post={post}/>
+              })
+            }
 
-
-          {post.reverse().map((post, index)=>{
-              return <Card
-                  key={index}
-                  index={index}
-                  post={post}
-              />
-          })}
-
-
-      </Content>
-
-      </Drawer>
-    </Container>
+          </Content>
+        </Drawer>
+      </Container>
     );
   }
 }
 
-const mapStateToProps = state =>{
-    const post = _.map(state.post, (val,uid)=>{
-        return {...val, uid};
-    });
-    return {post}
+const mapStateToProps = state => {
+  const post = _.map(state.post, (val, uid) => {
+    return {
+      ...val,
+      uid
+    };
+  });
+  return {post}
 };
 
-export default connect (mapStateToProps, {postFetch})(Grupos);
+export default connect(mapStateToProps, {postFetch})(Grupos);
 
 const styles = StyleSheet.create({
   img: {
@@ -124,30 +119,33 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center'
   },
-    miembros:{
-        flexDirection:'row',
-        justifyContent:'space-between',
-        padding:15,
-        backgroundColor:'white',
-        shadowColor: '#000',
-        shadowOffset: {width: 0, height: 2},
-        shadowOpacity: 0.2,
-        elevation: 2,
+  miembros: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 15,
+    backgroundColor: 'white',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2
     },
-    vnew:{
-        flexDirection:'column',
-        alignSelf:'center'
-    },
-    iconC:{
-        color:'green',
-        fontSize:34,
-        fontWeight:'bold',
-        alignSelf:'center'
-    },
-    icons:{
-        color:'green',
-        fontSize:34,
-        alignSelf:'center'
-    }
+    shadowOpacity: 0.2,
+    elevation: 2
+  },
+  vnew: {
+    flexDirection: 'column',
+    alignSelf: 'center'
+  },
+  iconC: {
+    color: 'green',
+    fontSize: 34,
+    fontWeight: 'bold',
+    alignSelf: 'center'
+  },
+  icons: {
+    color: 'green',
+    fontSize: 34,
+    alignSelf: 'center'
+  }
 
 });

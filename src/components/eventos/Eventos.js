@@ -1,19 +1,15 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {Container, Content, List, ListItem, Title, Card, Fab, Icon} from 'native-base';
-import Cabecera from '../header/Cabecera';
+import CabeceraEventos from './CabeceraEventos';
 import {Actions} from 'react-native-router-flux';
 
 export default class Eventos extends Component {
   render() {
     return (
       <Container>
-        <Cabecera/>
+        <CabeceraEventos/>
         <Content>
-
-          <View>
-            <Title style={styles.title}>Tus proximos eventos</Title>
-          </View>
 
           <List>
             <Card>

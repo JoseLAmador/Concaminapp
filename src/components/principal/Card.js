@@ -1,10 +1,9 @@
 import React from 'react';
-import {Text, View, Image, TouchableOpacity, StyleSheet, ImageBackground} from 'react-native';
-import {Drawer, Container, Content, Card, CardItem, Thumbnail, Button, Icon, Left, Body, Right} from 'native-base';
+import {Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
+import {Card, CardItem, Thumbnail, Button, Icon, Left, Body, Right} from 'native-base';
 
 export const Cardd = ({post}) => {
   const {image, text, user} = post
-
 
   return (
     <TouchableOpacity>
@@ -65,6 +64,6 @@ const styles = StyleSheet.create({
   },
   icon: {
     color: 'green',
-      margin:5
+    margin: 5
   }
 });
