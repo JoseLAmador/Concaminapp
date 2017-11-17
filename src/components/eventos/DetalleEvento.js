@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
   },
   text1: {
     margin: 20,
-    color: 'green',
+    color: '#0097A7',
     fontWeight: 'bold'
   },
   img2: {

@@ -21,7 +21,7 @@ export default EncabezadoG;
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: "green",
+    backgroundColor: "#0097A7",
     justifyContent: 'space-between'
   },
   view: {

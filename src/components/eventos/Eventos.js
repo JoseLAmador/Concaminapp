@@ -250,11 +250,11 @@ const styles = StyleSheet.create({
     width: 210
   },
   color: {
-    color: 'green',
+    color: '#0097A7',
     fontWeight: 'bold'
   },
   fab: {
-    backgroundColor: 'green'
+    backgroundColor: '#0097A7'
   },
   back: {
     backgroundColor: 'green'

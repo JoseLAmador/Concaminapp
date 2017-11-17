@@ -80,6 +80,6 @@ const styles = StyleSheet.create({
   },
   button: {
     width: '100%',
-    backgroundColor: 'green'
+    backgroundColor: '#0097A7'
   }
 });
