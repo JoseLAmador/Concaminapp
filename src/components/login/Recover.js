@@ -37,7 +37,7 @@ export default class Registro extends Component < {} > {
     const {verifyCorreo, correo} = this.state;
     if (verifyCorreo == correo) {
       return (
-        <Item success="success" style={styles.inputRounded}>
+        <Item style={styles.inputRounded}>
           <Input
             style={styles.color}
             placeholder='Correo electrónico'
@@ -53,7 +53,7 @@ export default class Registro extends Component < {} > {
     }
 
     return (
-      <Item error="error" style={styles.inputRounded}>
+      <Item style={styles.inputRounded}>
         <Input style={styles.color} placeholder='Correo electrónico' keyboardType='email-address' placeholderTextColor='#fff' returnKeyType='next' autoCapitalize='none' value={this.state.verifyCorreo} onChangeText={(verifyCorreo) => this.setState({verifyCorreo})}/>
         <Icon name='close-circle' style={styles.icon}/>
       </Item>

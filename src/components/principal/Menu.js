@@ -2,8 +2,12 @@ import React, {Component} from 'react';
 import {StyleSheet, Text, Image, TouchableOpacity, ImageBackground, View} from 'react-native';
 import {List, ListItem, Left, Body, Right, Icon, Content, Container, Badge, CardItem} from 'native-base';
 import {Actions} from 'react-native-router-flux';
+import firebase from '../firebase/Firebase'
 
 export default class Menu extends Component {
+    signOut=()=>{
+        firebase.auth().signOut();
+    };
   render(){
     return(
       <Container style={styles.menu}>
@@ -127,6 +131,9 @@ export default class Menu extends Component {
                   <Text>22</Text>
                 </View>
               </Right>
+            </ListItem>
+            <ListItem onPress={()=>this.signOut()} >
+              <Text>Cerrar Sesión</Text>
             </ListItem>
         </List>
       </Content>

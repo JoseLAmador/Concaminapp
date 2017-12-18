@@ -93,7 +93,7 @@ var Routes = function Routes() {
             lineNumber: 22
           }
         }),
-        _react2.default.createElement(_reactNativeRouterFlux.Scene, { key: 'Log', header: null, component: _Log2.default, __source: {
+        _react2.default.createElement(_reactNativeRouterFlux.Scene, { key: 'Log', header: null, component: _Log2.default, initial: true, __source: {
             fileName: _jsxFileName,
             lineNumber: 23
           }
@@ -108,7 +108,7 @@ var Routes = function Routes() {
             lineNumber: 25
           }
         }),
-        _react2.default.createElement(_reactNativeRouterFlux.Scene, { key: 'Principal', header: null, component: _Principal2.default, initial: true, __source: {
+        _react2.default.createElement(_reactNativeRouterFlux.Scene, { key: 'Principal', header: null, component: _Principal2.default, __source: {
             fileName: _jsxFileName,
             lineNumber: 26
           }
