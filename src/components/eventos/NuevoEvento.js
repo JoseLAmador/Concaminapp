@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity, StatusBar} from 'react-native';
 import {Container, Content, Input, Button, List, ListItem, CheckBox, Right, Icon, Left, Body} from 'native-base';
 import img2 from '../../assets/imgs/usuario.jpeg';
 import Cabecera from '../header/Cabecera';
@@ -13,6 +13,7 @@ export default class NuevoEvento extends Component {
       <Container style={styles.container}>
       <Cabecera/>
       <Content style={styles.back}>
+        <StatusBar backgroundColor="#0097A7" barStyle="light-content"/>
         <Image source={{
             uri: 'https://raw.githubusercontent.com/SaulSandovalM/Kopi/master/app/src/main/res/drawable/add_btn.png'
           }} style={styles.img}/>

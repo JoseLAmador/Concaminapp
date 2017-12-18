@@ -6,7 +6,7 @@ import {Content} from 'native-base';
 export const ResultPost = ({results}) => {
   return (
     <Content>
-    <StatusBar backgroundColor="green" barStyle="light-content"/>
+    <StatusBar backgroundColor="#0097A7" barStyle="light-content"/>
         {results.reverse().map((post, index)=>{
             return <Card
                 key={index}

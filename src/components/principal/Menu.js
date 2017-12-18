@@ -7,10 +7,11 @@ export default class Menu extends Component {
   render(){
     return(
       <Container style={styles.menu}>
-        <View style={{height:130}}>
+        <View style={styles.viewImage}>
           <ImageBackground source={{
               uri: 'http://www.visionindustrial.com.mx//wp-content/uploads/336d6e45001c603052accd6de4c50b60.jpg'
-          }} style={styles.img}>
+          }} style={styles.img} resizeMode={'contain'}
+          >
           </ImageBackground>
         </View>
         <Content>
@@ -33,9 +34,9 @@ export default class Menu extends Component {
                 <Text>Más recientes</Text>
               </Body>
               <Right>
-                <Badge success style={styles.badge}>
+                <View style={styles.viewBadge}>
                   <Text>12</Text>
-                </Badge>
+                </View>
               </Right>
             </ListItem>
             <ListItem icon onPress={() => Actions.Eventos()}>
@@ -46,9 +47,9 @@ export default class Menu extends Component {
                 <Text>Eventos</Text>
               </Body>
               <Right>
-                <Badge success style={styles.badge}>
+                <View style={styles.viewBadge}>
                   <Text>2</Text>
-                </Badge>
+                </View>
               </Right>
             </ListItem>
             <ListItem icon >
@@ -74,9 +75,9 @@ export default class Menu extends Component {
                 <Text>Fixter-Comunidad</Text>
               </Body>
               <Right>
-              <Badge success style={styles.badge}>
+              <View style={styles.viewBadge}>
                   <Text>2</Text>
-              </Badge>
+              </View>
               </Right>
             </ListItem>
             <ListItem icon>
@@ -96,9 +97,9 @@ export default class Menu extends Component {
                 <Text>Lol-Pachuca</Text>
               </Body>
               <Right>
-                <Badge success style={styles.badge}>
+                <View style={styles.viewBadge}>
                   <Text>12</Text>
-                </Badge>
+                </View>
               </Right>
             </ListItem>
             <ListItem icon>
@@ -109,9 +110,9 @@ export default class Menu extends Component {
                 <Text>Fit&Geek</Text>
               </Body>
               <Right>
-                <Badge success style={styles.badge}>
+                <View style={styles.viewBadge}>
                   <Text>1</Text>
-                </Badge>
+                </View>
               </Right>
             </ListItem>
             <ListItem icon>
@@ -122,9 +123,9 @@ export default class Menu extends Component {
                 <Text>MarioKart</Text>
               </Body>
               <Right>
-                <Badge success style={styles.badge}>
+                <View style={styles.viewBadge}>
                   <Text>22</Text>
-                </Badge>
+                </View>
               </Right>
             </ListItem>
         </List>
@@ -136,8 +137,7 @@ export default class Menu extends Component {
 
 const styles = StyleSheet.create({
     img: {
-        height: 130,
-        width: 200,
+        width: '100%',
         flex: 1,
         alignSelf:'center',
 
@@ -169,6 +169,19 @@ const styles = StyleSheet.create({
     },
     iconColor:{
       color:'green',
+    },
+    viewImage:{
+        minHeight:135,
+        width:'100%'
+    },
+    viewBadge:{
+        backgroundColor:'green',
+        borderRadius:50,
+        padding:4,
+        height:25,
+        width:25,
+        justifyContent:'center',
+        alignItems:'center',
     }
 
 });

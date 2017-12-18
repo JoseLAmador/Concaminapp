@@ -68,7 +68,7 @@ export default class Login extends Component < {} > {
   render() {
     return (
       <View style={styles.img}>
-        <StatusBar backgroundColor="orange" barStyle="light-content"/>
+        <StatusBar backgroundColor="#0097A7" barStyle="light-content"/>
         <Video
           source={videopp}
           rate={1.0}
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     marginRight: 40,
     marginLeft: 40,
     marginBottom: 10,
-    borderColor: 'orange',
+    borderColor: '#0097A7',
     borderWidth: 1.5,
     backgroundColor: 'rgba(0,0,0,.5)'
   },
@@ -185,18 +185,18 @@ const styles = StyleSheet.create({
     width: '78%',
     justifyContent: 'center',
     alignSelf: 'center',
-    backgroundColor: 'orange'
+    backgroundColor: '#0097A7'
   },
   icon: {
     backgroundColor: 'transparent',
-    color: 'orange',
+    color: '#0097A7',
     fontSize: 50
   },
   buttonSpinner: {
     marginRight: 140,
     marginLeft: 140,
     marginBottom: 10,
-    backgroundColor: 'orange'
+    backgroundColor: '#0097A7'
   },
   color: {
     color: 'white'

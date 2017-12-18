@@ -1,0 +1,49 @@
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.ResultPost = undefined;
+var _jsxFileName = '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/principal/ResultPost.js';
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Card = require('./Card');
+
+var _Card2 = _interopRequireDefault(_Card);
+
+var _reactNative = require('react-native');
+
+var _nativeBase = require('native-base');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ResultPost = exports.ResultPost = function ResultPost(_ref) {
+    var results = _ref.results;
+
+    return _react2.default.createElement(
+        _nativeBase.Content,
+        {
+            __source: {
+                fileName: _jsxFileName,
+                lineNumber: 8
+            }
+        },
+        _react2.default.createElement(_reactNative.StatusBar, { backgroundColor: '#0097A7', barStyle: 'light-content', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 9
+            }
+        }),
+        results.reverse().map(function (post, index) {
+            return _react2.default.createElement(_Card2.default, {
+                key: index,
+                index: index,
+                post: post,
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 11
+                }
+            });
+        })
+    );
+};

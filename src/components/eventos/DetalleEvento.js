@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, Image, StyleSheet, View} from 'react-native';
+import {Text, Image, StyleSheet, View, StatusBar} from 'react-native';
 import {Container, Content, Left, Body, Right, ListItem, List, Icon, Card, CardItem} from 'native-base';
 import Cabecera from '../header/Cabecera';
 
@@ -9,6 +9,7 @@ export default class DetalleEvento extends Component {
       <Container style={styles.back}>
         <Cabecera/>
         <Content>
+          <StatusBar backgroundColor="#0097A7" barStyle="light-content"/>
           <Image source={{
               uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'
             }} style={styles.img}/>

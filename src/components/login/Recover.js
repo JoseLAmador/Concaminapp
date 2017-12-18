@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
   button: {
     width: '78%',
     alignSelf: 'center',
-    backgroundColor: 'orange'
+    backgroundColor: '#0097A7'
   },
   content: {
     justifyContent: 'center',
@@ -127,18 +127,18 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginRight: 10,
-    color: 'orange'
+    color: '#0097A7'
   },
   icon2: {
     backgroundColor: 'transparent',
-    color: 'orange',
+    color: '#0097A7',
     fontSize: 50
   },
   inputRounded: {
     marginRight: 40,
     marginLeft: 40,
     marginBottom: 10,
-    borderColor: 'orange',
+    borderColor: '#0097A7',
     borderWidth: 1.5
   },
   estiloImageB: {

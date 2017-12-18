@@ -3,7 +3,7 @@ import {Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import {Card, CardItem, Thumbnail, Button, Icon, Left, Body, Right} from 'native-base';
 
 export const Cardd = ({post}) => {
-  const {image, text, user} = post
+  const {image, text, user} = post;
 
   return (
     <TouchableOpacity>
@@ -19,14 +19,14 @@ export const Cardd = ({post}) => {
           </Left>
         </CardItem>
         <CardItem>
-          <Body>
             <Image source={{
                 uri: image
-              }} style={styles.img}/>
-            <Text>
+              }} style={styles.img} resizeMode={'contain'}/>
+        </CardItem>
+        <CardItem>
+          <Text>
               {text}
-            </Text>
-          </Body>
+          </Text>
         </CardItem>
         <CardItem>
           <Left>
@@ -50,14 +50,10 @@ export default Cardd;
 
 const styles = StyleSheet.create({
   img: {
-    height: 200,
+    minHeight: 200,
+      maxHeight: 200,
     width: '100%',
-    flex: 1
-  },
-  texto: {
-    color: 'white',
-    fontSize: 14,
-    alignSelf: 'flex-end'
+    flex: 1,
   },
   card: {
     flex: 0

@@ -1,0 +1,717 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require('react');
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require('./../../../node_modules/react-transform-hmr/lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+var _jsxFileName = '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/perfil/Perfil.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactNative = require('react-native');
+
+var _nativeBase = require('native-base');
+
+var _usuario = require('../../assets/imgs/usuario.jpeg');
+
+var _usuario2 = _interopRequireDefault(_usuario);
+
+var _fondo = require('../../assets/imgs/fondo.jpg');
+
+var _fondo2 = _interopRequireDefault(_fondo);
+
+var _reactNativeRouterFlux = require('react-native-router-flux');
+
+var _mr = require('../../assets/imgs/mr.jpg');
+
+var _mr2 = _interopRequireDefault(_mr);
+
+var _Cabecera = require('../header/Cabecera');
+
+var _Cabecera2 = _interopRequireDefault(_Cabecera);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  Perfil: {
+    displayName: 'Perfil'
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/perfil/Perfil.js',
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var Perfil = _wrapComponent('Perfil')(function (_Component) {
+  _inherits(Perfil, _Component);
+
+  function Perfil() {
+    _classCallCheck(this, Perfil);
+
+    return _possibleConstructorReturn(this, (Perfil.__proto__ || Object.getPrototypeOf(Perfil)).apply(this, arguments));
+  }
+
+  _createClass(Perfil, [{
+    key: 'render',
+    value: function render() {
+      return _react3.default.createElement(
+        _nativeBase.Container,
+        { style: styles.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
+        _react3.default.createElement(_Cabecera2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14
+          }
+        }),
+        _react3.default.createElement(
+          _nativeBase.Content,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15
+            }
+          },
+          _react3.default.createElement(_reactNative.StatusBar, { backgroundColor: '#0097A7', barStyle: 'light-content', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 16
+            }
+          }),
+          _react3.default.createElement(_reactNative.Image, { source: { uri: 'https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/25158120_1477432199018830_2811544516218409335_n.jpg?oh=d43d9b6d90f067a9a9f26dbaf9de4be0&oe=5AB7BDE8' }, style: styles.img, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
+            }
+          }),
+          _react3.default.createElement(
+            _reactNative.View,
+            { style: styles.view, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 18
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.View,
+              { style: styles.view, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 19
+                }
+              },
+              _react3.default.createElement(_reactNative.Image, { source: {
+                  uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png' }, style: styles.thub, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 20
+                }
+              })
+            ),
+            _react3.default.createElement(
+              _nativeBase.H1,
+              { style: styles.h1, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 23
+                }
+              },
+              'Fixter'
+            ),
+            _react3.default.createElement(
+              _reactNative.Text,
+              { style: styles.text, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 24
+                }
+              },
+              'contacto@fixter.org'
+            ),
+            _react3.default.createElement(
+              _reactNative.View,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 25
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                { style: styles.texto, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 26
+                  }
+                },
+                'Hello World! Soy Fixter, fan de las pel\xEDculas y los videojuegos, idealista, hacker, y este es mi hogar'
+              )
+            )
+          ),
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 31
+              }
+            },
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 32
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 33
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'briefcase', style: { marginRight: 10 }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 34
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 35
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: { fontWeight: 'bold' }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 36
+                      }
+                    },
+                    'Intereses de Empleo'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 37
+                      }
+                    },
+                    'Its time to build a difference . .'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 42
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 43
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'bookmark', style: { marginRight: 10 }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 44
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 45
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: { fontWeight: 'bold' }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 46
+                      }
+                    },
+                    'Elementos Guardados'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 47
+                      }
+                    },
+                    'Its time to build a difference . .'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _reactNative.Text,
+              { style: { fontWeight: 'bold' }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 52
+                }
+              },
+              'Experiencia'
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 53
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 54
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'bookmark', style: { marginRight: 20 }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 55
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 56
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: { fontWeight: 'bold' }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 57
+                      }
+                    },
+                    'Backend Developer'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 58
+                      }
+                    },
+                    'Mirak Solutions'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 59
+                      }
+                    },
+                    'oct de 2017 -actualidad . 2 meses'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 63
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'bookmark', style: { marginRight: 20 }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 64
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 65
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: { fontWeight: 'bold' }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 66
+                      }
+                    },
+                    'FullStack Developer'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 67
+                      }
+                    },
+                    'Fixter Geek'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 68
+                      }
+                    },
+                    'oct de 2016 -actualidad . 1 mes'
+                  )
+                )
+              )
+            )
+          ),
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 74
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.Text,
+              { style: { fontWeight: 'bold' }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 75
+                }
+              },
+              'Educacion'
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 76
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 77
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'bookmark', style: { marginRight: 20 }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 78
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 79
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: { fontWeight: 'bold' }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 80
+                      }
+                    },
+                    'Unidad Profesional Interdiciplinaria'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 81
+                      }
+                    },
+                    'Ingenieria en Telematica'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 82
+                      }
+                    },
+                    'oct de 2017 -actualidad . 2 meses'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 86
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'bookmark', style: { marginRight: 20 }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 87
+                  }
+                }),
+                _react3.default.createElement(
+                  _nativeBase.Body,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 88
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: { fontWeight: 'bold' }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 89
+                      }
+                    },
+                    'Unidad Profesional Interdiciplinaria'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 90
+                      }
+                    },
+                    'Ingenieria en Mecatronica'
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { note: true, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 91
+                      }
+                    },
+                    'oct de 2017 -actualidad . 2 meses'
+                  )
+                )
+              )
+            )
+          ),
+          _react3.default.createElement(
+            _nativeBase.Card,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 97
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.Text,
+              { style: { margin: 20, fontWeight: 'bold' }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 98
+                }
+              },
+              'Aptitudes y validaciones destacadas'
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 99
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                { style: { fontWeight: 'bold' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 100
+                  }
+                },
+                'Django'
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 102
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                { style: { fontWeight: 'bold' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 103
+                  }
+                },
+                'React'
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 105
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                { style: { fontWeight: 'bold' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 106
+                  }
+                },
+                'Firebase'
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 108
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                { style: { fontWeight: 'bold' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 109
+                  }
+                },
+                '2 APTITUDES MAS'
+              )
+            )
+          ),
+          _react3.default.createElement(
+            _nativeBase.Card,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 113
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.Text,
+              { style: { margin: 20, fontWeight: 'bold' }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 114
+                }
+              },
+              'Contactar'
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 115
+                }
+              },
+              _react3.default.createElement(_nativeBase.Icon, { name: 'bookmark', style: { marginRight: 20 }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 116
+                }
+              }),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 117
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  { style: { fontWeight: 'bold' }, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 118
+                    }
+                  },
+                  'contacto@fixter.org'
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Perfil;
+}(_react2.Component));
+
+exports.default = Perfil;
+
+
+var styles = _reactNative.StyleSheet.create({
+  thub: {
+    margin: 10,
+    height: 100,
+    width: 100, borderRadius: 50
+  },
+  h1: {
+    color: 'black',
+    alignSelf: 'center'
+  },
+  text: {
+    color: 'black',
+    alignSelf: 'center'
+  },
+  img: {
+    flex: 2,
+    height: 200,
+    width: null
+  },
+  container: {
+    backgroundColor: 'white'
+  },
+  view: {
+    alignSelf: 'center',
+    marginTop: -30,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  orden: {
+    alignSelf: 'center',
+    margin: 20,
+    fontSize: 20
+  },
+  view2: {
+    flexDirection: 'row'
+  },
+  texto: {
+    margin: 10
+  },
+  img2: {
+    height: 200, width: '100%'
+  },
+  color: {
+    color: '#87838B'
+  }
+});

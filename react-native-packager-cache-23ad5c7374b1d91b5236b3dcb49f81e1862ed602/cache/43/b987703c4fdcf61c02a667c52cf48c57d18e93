@@ -1,0 +1,739 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require('react');
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require('./../../../node_modules/react-transform-hmr/lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+var _jsxFileName = '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/principal/Menu.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactNative = require('react-native');
+
+var _nativeBase = require('native-base');
+
+var _reactNativeRouterFlux = require('react-native-router-flux');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  Menu: {
+    displayName: 'Menu'
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/principal/Menu.js',
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var Menu = _wrapComponent('Menu')(function (_Component) {
+  _inherits(Menu, _Component);
+
+  function Menu() {
+    _classCallCheck(this, Menu);
+
+    return _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).apply(this, arguments));
+  }
+
+  _createClass(Menu, [{
+    key: 'render',
+    value: function render() {
+      return _react3.default.createElement(
+        _nativeBase.Container,
+        { style: styles.menu, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9
+          }
+        },
+        _react3.default.createElement(
+          _reactNative.View,
+          { style: styles.viewImage, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 10
+            }
+          },
+          _react3.default.createElement(_reactNative.ImageBackground, { source: {
+              uri: 'http://www.visionindustrial.com.mx//wp-content/uploads/336d6e45001c603052accd6de4c50b60.jpg'
+            }, style: styles.img, resizeMode: 'contain',
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 11
+            }
+          })
+        ),
+        _react3.default.createElement(
+          _nativeBase.Content,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
+            }
+          },
+          _react3.default.createElement(
+            _reactNative.TouchableOpacity,
+            { style: styles.usuarioImagen, onPress: function onPress() {
+                return _reactNativeRouterFlux.Actions.Perfil();
+              }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 19
+              }
+            },
+            _react3.default.createElement(_reactNative.Image, { style: styles.usuario, source: {
+                uri: 'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png' }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 20
+              }
+            }),
+            _react3.default.createElement(
+              _reactNative.Text,
+              { style: styles.text, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 22
+                }
+              },
+              'Fixter'
+            )
+          ),
+          _react3.default.createElement(
+            _nativeBase.List,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 25
+              }
+            },
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { itemDivider: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 26
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 27
+                  }
+                },
+                'FAVORITOS'
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { icon: true, onPress: function onPress() {
+                  return _reactNativeRouterFlux.Actions.Principal();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 29
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 30
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'ios-book', style: styles.iconColor, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 31
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 33
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 34
+                    }
+                  },
+                  'M\xE1s recientes'
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 36
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.viewBadge, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 37
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 38
+                      }
+                    },
+                    '12'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { icon: true, onPress: function onPress() {
+                  return _reactNativeRouterFlux.Actions.Eventos();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 42
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 43
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'ios-calendar', style: styles.iconColor, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 44
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 46
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 47
+                    }
+                  },
+                  'Eventos'
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 49
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.viewBadge, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 50
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 51
+                      }
+                    },
+                    '2'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { icon: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 55
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 56
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'person', style: styles.iconColor, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 57
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 59
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 60
+                    }
+                  },
+                  'Amigos'
+                )
+              ),
+              _react3.default.createElement(_nativeBase.Right, {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 62
+                }
+              })
+            )
+          ),
+          _react3.default.createElement(
+            _nativeBase.List,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 66
+              }
+            },
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { itemDivider: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 67
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 68
+                  }
+                },
+                'GRUPOS'
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { icon: true, onPress: function onPress() {
+                  return _reactNativeRouterFlux.Actions.Grupos();
+                }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 70
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 71
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'bulb', style: styles.iconColor, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 72
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 74
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 75
+                    }
+                  },
+                  'Fixter-Comunidad'
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 77
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.viewBadge, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 78
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 79
+                      }
+                    },
+                    '2'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { icon: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 83
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 84
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'ios-microphone', style: styles.iconColor, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 85
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 87
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 88
+                    }
+                  },
+                  'VectorBr'
+                )
+              ),
+              _react3.default.createElement(_nativeBase.Right, {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 90
+                }
+              })
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { icon: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 92
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 93
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'pizza', style: styles.iconColor, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 94
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 96
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 97
+                    }
+                  },
+                  'Lol-Pachuca'
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 99
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.viewBadge, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 100
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 101
+                      }
+                    },
+                    '12'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { icon: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 105
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 106
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'nutrition', style: styles.iconColor, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 107
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 109
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 110
+                    }
+                  },
+                  'Fit&Geek'
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 112
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.viewBadge, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 113
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 114
+                      }
+                    },
+                    '1'
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              { icon: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 118
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 119
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'beer', style: styles.iconColor, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 120
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _nativeBase.Body,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 122
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 123
+                    }
+                  },
+                  'MarioKart'
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 125
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.viewBadge, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 126
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 127
+                      }
+                    },
+                    '22'
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Menu;
+}(_react2.Component));
+
+exports.default = Menu;
+;
+
+var styles = _reactNative.StyleSheet.create({
+  img: {
+    width: '100%',
+    flex: 1,
+    alignSelf: 'center'
+
+  },
+  usuario: {
+    width: 60,
+    height: 60,
+    margin: 20,
+    borderRadius: 10
+
+  },
+  usuarioImagen: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  text: {
+    fontSize: 15,
+    color: 'black',
+    fontWeight: 'bold'
+  },
+  badge: {
+    justifyContent: 'center',
+    alignItems: 'center'
+
+  },
+  menu: {
+    backgroundColor: 'white'
+  },
+  iconColor: {
+    color: 'green'
+  },
+  viewImage: {
+    minHeight: 135,
+    width: '100%'
+  },
+  viewBadge: {
+    backgroundColor: 'green',
+    borderRadius: 50,
+    padding: 4,
+    height: 25,
+    width: 25,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+
+});

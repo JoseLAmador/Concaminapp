@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, StatusBar} from 'react-native';
 import {Container, Content, Button, Thumbnail, H1, Card, Icon, Left, Body, CardItem, ListItem} from 'native-base';
 import img2 from '../../assets/imgs/usuario.jpeg';
 import img from '../../assets/imgs/fondo.jpg';
@@ -13,15 +13,17 @@ export default class Perfil extends Component {
       <Container style={styles.container}>
       <Cabecera/>
       <Content>
-        <Image source={img} style={styles.img}/>
+        <StatusBar backgroundColor="#0097A7" barStyle="light-content"/>
+        <Image source={{uri: 'https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/25158120_1477432199018830_2811544516218409335_n.jpg?oh=d43d9b6d90f067a9a9f26dbaf9de4be0&oe=5AB7BDE8'}} style={styles.img}/>
           <View style={styles.view}>
             <View style={styles.view}>
-              <Thumbnail source={img2} style={styles.thub}/>
+              <Image source={{
+                  uri:'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'}} style={styles.thub}/>
             </View>
-            <H1 style={styles.h1}>Saul Sandoval M</H1>
-            <Text style={styles.text}>sauldevelop@gmail.com</Text>
+            <H1 style={styles.h1}>Fixter</H1>
+            <Text style={styles.text}>contacto@fixter.org</Text>
             <View>
-            <Text style={styles.texto}>Hello World! Soy Saúl, fan de las películas y los videojuegos,
+            <Text style={styles.texto}>Hello World! Soy Fixter, fan de las películas y los videojuegos,
               idealista, hacker, y este es mi hogar</Text>
           </View>
           </View>
@@ -113,12 +115,12 @@ export default class Perfil extends Component {
           <ListItem>
             <Icon name="bookmark" style={{marginRight: 20}}/>
               <Body>
-                <Text style={{fontWeight: 'bold'}}>nitram-210397@hotmail.com</Text>
+                <Text style={{fontWeight: 'bold'}}>contacto@fixter.org</Text>
               </Body>
           </ListItem>
         </Card>
 
-          <Card>
+          {/*<Card>
             <CardItem>
               <Left>
                 <Body>
@@ -216,7 +218,7 @@ export default class Perfil extends Component {
               </Left>
             </CardItem>
           </Card>
-
+*/}
       </Content>
     </Container>
     );
@@ -227,15 +229,15 @@ const styles = StyleSheet.create({
   thub: {
     margin: 10,
     height: 100,
-    width: 100
+    width: 100, borderRadius:50
   },
   h1: {
-    marginLeft: 20,
+    //marginLeft: 20,
     color: 'black',
     alignSelf: 'center'
   },
   text: {
-    marginLeft: 20,
+    //marginLeft: 20,
     color: 'black',
     alignSelf: 'center'
   },
@@ -249,7 +251,9 @@ const styles = StyleSheet.create({
   },
   view: {
     alignSelf: 'center',
-    marginTop: -30
+    marginTop: -30,
+      justifyContent:'center',
+      alignItems:'center'
   },
   orden: {
     alignSelf: 'center',

@@ -1,0 +1,354 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require('react');
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require('./../../../node_modules/react-transform-hmr/lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+var _jsxFileName = '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/eventos/NuevoEvento.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactNative = require('react-native');
+
+var _nativeBase = require('native-base');
+
+var _usuario = require('../../assets/imgs/usuario.jpeg');
+
+var _usuario2 = _interopRequireDefault(_usuario);
+
+var _Cabecera = require('../header/Cabecera');
+
+var _Cabecera2 = _interopRequireDefault(_Cabecera);
+
+var _fondo = require('../../assets/imgs/fondo.jpg');
+
+var _fondo2 = _interopRequireDefault(_fondo);
+
+var _reactNativeRouterFlux = require('react-native-router-flux');
+
+var _mr = require('../../assets/imgs/mr.jpg');
+
+var _mr2 = _interopRequireDefault(_mr);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  NuevoEvento: {
+    displayName: 'NuevoEvento'
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/eventos/NuevoEvento.js',
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var NuevoEvento = _wrapComponent('NuevoEvento')(function (_Component) {
+  _inherits(NuevoEvento, _Component);
+
+  function NuevoEvento() {
+    _classCallCheck(this, NuevoEvento);
+
+    return _possibleConstructorReturn(this, (NuevoEvento.__proto__ || Object.getPrototypeOf(NuevoEvento)).apply(this, arguments));
+  }
+
+  _createClass(NuevoEvento, [{
+    key: 'render',
+    value: function render() {
+      return _react3.default.createElement(
+        _nativeBase.Container,
+        { style: styles.container, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
+        _react3.default.createElement(_Cabecera2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14
+          }
+        }),
+        _react3.default.createElement(
+          _nativeBase.Content,
+          { style: styles.back, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15
+            }
+          },
+          _react3.default.createElement(_reactNative.StatusBar, { backgroundColor: '#0097A7', barStyle: 'light-content', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 16
+            }
+          }),
+          _react3.default.createElement(_reactNative.Image, { source: {
+              uri: 'https://raw.githubusercontent.com/SaulSandovalM/Kopi/master/app/src/main/res/drawable/add_btn.png'
+            }, style: styles.img, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
+            }
+          }),
+          _react3.default.createElement(_nativeBase.Input, {
+            name: 'Nombre',
+            placeholder: 'Nombre del evento',
+            placeholderTextColor: 'black',
+            returnKeyType: 'next', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          }),
+          _react3.default.createElement(
+            _nativeBase.List,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 27
+              }
+            },
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 28
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 29
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'calendar', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 30
+                  }
+                }),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  { style: styles.text, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 31
+                    }
+                  },
+                  'Fecha'
+                )
+              ),
+              _react3.default.createElement(_nativeBase.Right, {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 33
+                }
+              })
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 35
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 36
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'map', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 37
+                  }
+                }),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  { style: styles.text, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 38
+                    }
+                  },
+                  'Ubicacion'
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 41
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 42
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'brush', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 43
+                  }
+                }),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  { style: styles.text, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 44
+                    }
+                  },
+                  'Detalles'
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 47
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 48
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'person', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 49
+                  }
+                }),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  { style: styles.text, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 50
+                    }
+                  },
+                  'Los invitados pueden invitar amigos'
+                )
+              ),
+              _react3.default.createElement(
+                _nativeBase.Right,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 52
+                  }
+                },
+                _react3.default.createElement(_nativeBase.CheckBox, { checked: true, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 53
+                  }
+                })
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.ListItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 56
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.Left,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 57
+                  }
+                },
+                _react3.default.createElement(_nativeBase.Icon, { name: 'person', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 58
+                  }
+                }),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  { style: styles.text, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 59
+                    }
+                  },
+                  'Otros Organizadores'
+                )
+              )
+            )
+          )
+        ),
+        _react3.default.createElement(
+          _nativeBase.Button,
+          { block: true, style: styles.button, onPress: function onPress() {
+              return _reactNativeRouterFlux.Actions.Eventos();
+            }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 65
+            }
+          },
+          _react3.default.createElement(
+            _reactNative.Text,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 65
+              }
+            },
+            'CREAR'
+          )
+        )
+      );
+    }
+  }]);
+
+  return NuevoEvento;
+}(_react2.Component));
+
+exports.default = NuevoEvento;
+
+
+var styles = _reactNative.StyleSheet.create({
+  back: {
+    backgroundColor: 'white'
+  },
+  text: {
+    marginLeft: 10
+  },
+  img: {
+    height: 200,
+    width: '100%'
+  },
+  button: {
+    width: '100%',
+    backgroundColor: '#0097A7'
+  }
+});

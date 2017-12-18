@@ -21,6 +21,7 @@ class Grupos extends Component {
 
   render() {
     const {post} = this.props;
+      let filtrados = post.filter(f=>{return f.group});
     return (
       <Container>
         <Drawer ref={(ref) => {
@@ -33,7 +34,7 @@ class Grupos extends Component {
 
           <EncabezadoG abrir={this.openDrawer}/>
           <Content>
-            <StatusBar backgroundColor="green" barStyle="light-content"/>
+            <StatusBar backgroundColor="#0097A7" barStyle="light-content"/>
             <CardItem cardBody>
               <ImageBackground source={{
                   uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
@@ -76,7 +77,7 @@ class Grupos extends Component {
           </View>*/}
 
             {
-              post.reverse().map((post, index) => {
+              filtrados.reverse().map((post, index) => {
                 return <Card key={index} index={index} post={post}/>
               })
             }

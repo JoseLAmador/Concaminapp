@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity, StatusBar} from 'react-native';
 import {Container, Content, List, ListItem, Title, Card, Fab, Icon} from 'native-base';
 import CabeceraEventos from './CabeceraEventos';
 import {Actions} from 'react-native-router-flux';
@@ -10,7 +10,7 @@ export default class Eventos extends Component {
       <Container>
         <CabeceraEventos/>
         <Content>
-
+          <StatusBar backgroundColor="#0097A7" barStyle="light-content"/>
           <List>
             <Card>
               <ListItem onPress={() => Actions.DetalleEvento()} style={styles.flex}>

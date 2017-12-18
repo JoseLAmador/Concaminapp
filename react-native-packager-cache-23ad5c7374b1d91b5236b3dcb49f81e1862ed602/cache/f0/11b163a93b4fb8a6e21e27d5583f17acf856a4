@@ -1,0 +1,1271 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require('react');
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require('./../../../node_modules/react-transform-hmr/lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+var _jsxFileName = '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/eventos/Eventos.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactNative = require('react-native');
+
+var _nativeBase = require('native-base');
+
+var _CabeceraEventos = require('./CabeceraEventos');
+
+var _CabeceraEventos2 = _interopRequireDefault(_CabeceraEventos);
+
+var _reactNativeRouterFlux = require('react-native-router-flux');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  Eventos: {
+    displayName: 'Eventos'
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: '/home/jose/Escritorio/CONCAMIIIIIIIIN/Concaminapp/src/components/eventos/Eventos.js',
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var Eventos = _wrapComponent('Eventos')(function (_Component) {
+  _inherits(Eventos, _Component);
+
+  function Eventos() {
+    _classCallCheck(this, Eventos);
+
+    return _possibleConstructorReturn(this, (Eventos.__proto__ || Object.getPrototypeOf(Eventos)).apply(this, arguments));
+  }
+
+  _createClass(Eventos, [{
+    key: 'render',
+    value: function render() {
+      return _react3.default.createElement(
+        _nativeBase.Container,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10
+          }
+        },
+        _react3.default.createElement(_CabeceraEventos2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11
+          }
+        }),
+        _react3.default.createElement(
+          _nativeBase.Content,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 12
+            }
+          },
+          _react3.default.createElement(_reactNative.StatusBar, { backgroundColor: '#0097A7', barStyle: 'light-content', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 13
+            }
+          }),
+          _react3.default.createElement(
+            _nativeBase.List,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 14
+              }
+            },
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 15
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                { onPress: function onPress() {
+                    return _reactNativeRouterFlux.Actions.DetalleEvento();
+                  }, style: styles.flex, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 16
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view3, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 17
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 18
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 19
+                        }
+                      },
+                      '17 Nov'
+                    ),
+                    '\n',
+                    'vie'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view4, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 21
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.text, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 22
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 23
+                        }
+                      },
+                      'Entrega de la App'
+                    ),
+                    '\n',
+                    '17 nov'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 25
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.status2, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 26
+                      }
+                    },
+                    'AHORA'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _reactNative.View,
+                { style: styles.view, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 29
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 30
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 31
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 32
+                        }
+                      },
+                      'ME INTERESA'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 35
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    { style: styles.flex, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 36
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 37
+                        }
+                      },
+                      'ASISTIRE'
+                    ),
+                    _react3.default.createElement(_nativeBase.Icon, { name: 'ios-checkmark', style: { marginTop: -8, marginLeft: 2 }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 38
+                      }
+                    })
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 41
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 42
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 43
+                        }
+                      },
+                      'IGNORAR'
+                    )
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 49
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                { onPress: function onPress() {
+                    return _reactNativeRouterFlux.Actions.DetalleEvento();
+                  }, style: styles.flex, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 50
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view3, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 51
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 52
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 53
+                        }
+                      },
+                      '20 Nov'
+                    ),
+                    '\n',
+                    'mar'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view4, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 55
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.text, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 56
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 57
+                        }
+                      },
+                      'Cumplea\xF1os de Brenda'
+                    ),
+                    '\n',
+                    '20 nov'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 59
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.status1, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 60
+                      }
+                    },
+                    'EN 3 DIAS'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _reactNative.View,
+                { style: styles.view, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 63
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 64
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 65
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 66
+                        }
+                      },
+                      'ME INTERESA'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 69
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    { style: styles.flex, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 70
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 71
+                        }
+                      },
+                      'ASISTIRE'
+                    ),
+                    _react3.default.createElement(_nativeBase.Icon, { name: 'ios-checkmark', style: { marginTop: -8, marginLeft: 2 }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 72
+                      }
+                    })
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 75
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 76
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 77
+                        }
+                      },
+                      'IGNORAR'
+                    )
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 83
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                { onPress: function onPress() {
+                    return _reactNativeRouterFlux.Actions.DetalleEvento();
+                  }, style: styles.flex, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 84
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view3, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 85
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 86
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 87
+                        }
+                      },
+                      '28 Dic'
+                    ),
+                    '\n',
+                    'jue'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view4, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 89
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.text, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 90
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 91
+                        }
+                      },
+                      'Reunion de Fin de A\xF1o'
+                    ),
+                    '\n',
+                    '28 dic - 29 dic'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 93
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.status1, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 94
+                      }
+                    },
+                    'EN 41 DIAS'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _reactNative.View,
+                { style: styles.view, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 97
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 98
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    { style: styles.flex, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 99
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 100
+                        }
+                      },
+                      'ME INTERESA'
+                    ),
+                    _react3.default.createElement(_nativeBase.Icon, { name: 'ios-checkmark', style: { marginTop: -8, marginLeft: 2 }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 101
+                      }
+                    })
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 104
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 105
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 106
+                        }
+                      },
+                      'ASISTIRE'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 109
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 110
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 111
+                        }
+                      },
+                      'IGNORAR'
+                    )
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 117
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                { onPress: function onPress() {
+                    return _reactNativeRouterFlux.Actions.DetalleEvento();
+                  }, style: styles.flex, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 118
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view3, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 119
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 120
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 121
+                        }
+                      },
+                      '20 Ene'
+                    ),
+                    '\n',
+                    'sab'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view4, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 123
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.text, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 124
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 125
+                        }
+                      },
+                      'Conferencia'
+                    ),
+                    '\n',
+                    '20 ene'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 127
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.status1, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 128
+                      }
+                    },
+                    'EN 64 DIAS'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _reactNative.View,
+                { style: styles.view, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 131
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 132
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 133
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 134
+                        }
+                      },
+                      'ME INTERESA'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 137
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 138
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 139
+                        }
+                      },
+                      'ASISTIRE'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 142
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    { style: styles.flex, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 143
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 144
+                        }
+                      },
+                      'IGNORAR'
+                    ),
+                    _react3.default.createElement(_nativeBase.Icon, { name: 'ios-checkmark', style: { marginTop: -8, marginLeft: 2 }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 145
+                      }
+                    })
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 151
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                { onPress: function onPress() {
+                    return _reactNativeRouterFlux.Actions.DetalleEvento();
+                  }, style: styles.flex, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 152
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view3, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 153
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 154
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 155
+                        }
+                      },
+                      '25 Feb'
+                    ),
+                    '\n',
+                    'dom'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view4, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 157
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.text, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 158
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 159
+                        }
+                      },
+                      'Viaje de Trabajo'
+                    ),
+                    '\n',
+                    '25 feb'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 161
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.status1, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 162
+                      }
+                    },
+                    'EN 100 DIAS'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _reactNative.View,
+                { style: styles.view, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 165
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 166
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 167
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 168
+                        }
+                      },
+                      'ME INTERESA'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 171
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    { style: styles.flex, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 172
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 173
+                        }
+                      },
+                      'ASISTIRE'
+                    ),
+                    _react3.default.createElement(_nativeBase.Icon, { name: 'ios-checkmark', style: { marginTop: -8, marginLeft: 2 }, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 174
+                      }
+                    })
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 177
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 178
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.color2, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 179
+                        }
+                      },
+                      'IGNORAR'
+                    )
+                  )
+                )
+              )
+            ),
+            _react3.default.createElement(
+              _nativeBase.Card,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 185
+                }
+              },
+              _react3.default.createElement(
+                _nativeBase.ListItem,
+                { onPress: function onPress() {
+                    return _reactNativeRouterFlux.Actions.DetalleEvento();
+                  }, style: styles.flex, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 186
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view3, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 187
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 188
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 189
+                        }
+                      },
+                      '6 Mar'
+                    ),
+                    '\n',
+                    'mar'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view4, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 191
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.text, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 192
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      { style: styles.negritas, __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 193
+                        }
+                      },
+                      'Entrega de Proyectos'
+                    ),
+                    '\n',
+                    '6 mar'
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.Text,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 195
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.Text,
+                    { style: styles.status1, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 196
+                      }
+                    },
+                    'EN 128 DIAS'
+                  )
+                )
+              ),
+              _react3.default.createElement(
+                _reactNative.View,
+                { style: styles.view, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 199
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 200
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 201
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 202
+                        }
+                      },
+                      'ME INTERESA'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 205
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 206
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 207
+                        }
+                      },
+                      'ASISTIRE'
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  { style: styles.view2, __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 210
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 211
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.Text,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 212
+                        }
+                      },
+                      'IGNORAR'
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react3.default.createElement(
+          _nativeBase.Fab,
+          { direction: 'up', style: styles.fab, position: 'bottomRight', onPress: function onPress() {
+              return _reactNativeRouterFlux.Actions.NuevoEvento();
+            }, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 220
+            }
+          },
+          _react3.default.createElement(_nativeBase.Icon, { name: 'add', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 221
+            }
+          })
+        )
+      );
+    }
+  }]);
+
+  return Eventos;
+}(_react2.Component));
+
+exports.default = Eventos;
+
+
+var styles = _reactNative.StyleSheet.create({
+  back: {
+    backgroundColor: 'white'
+  },
+  title: {
+    margin: 10,
+    color: 'black'
+  },
+  text: {
+    marginLeft: 25
+  },
+  view: {
+    flexDirection: 'row',
+    alignSelf: 'center'
+  },
+  view2: {
+    margin: 20
+  },
+  view3: {
+    marginLeft: 5
+  },
+  view4: {
+    width: 210
+  },
+  color: {
+    color: '#0097A7',
+    fontWeight: 'bold'
+  },
+  fab: {
+    backgroundColor: '#0097A7'
+  },
+  back: {
+    backgroundColor: 'green'
+  },
+  negritas: {
+    fontWeight: 'bold'
+  },
+  status1: {
+    color: 'blue',
+    fontWeight: 'bold'
+  },
+  status2: {
+    color: 'red',
+    fontWeight: 'bold'
+  },
+  color2: {
+    color: 'gray'
+  },
+  flex: {
+    flexDirection: 'row'
+  }
+
+});
