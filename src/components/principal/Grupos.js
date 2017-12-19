@@ -50,7 +50,7 @@ class Grupos extends Component {
             <StatusBar backgroundColor="#0097A7" barStyle="light-content"/>
             <CardItem cardBody>
               <ImageBackground source={{
-                  uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
+                  uri: 'https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/17342748_1510316442365523_2486792964622413805_n.png?oh=c028b71ecaf441dcd46455d0937f6cb7&oe=5ACA0BAC'
               }} style={styles.img}></ImageBackground>
             </CardItem>
             <View style={styles.miembros}>

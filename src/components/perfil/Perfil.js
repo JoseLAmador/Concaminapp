@@ -18,7 +18,7 @@ export default class Perfil extends Component {
           <View style={styles.view}>
             <View style={styles.view}>
               <Image source={{
-                  uri:'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'}} style={styles.thub}/>
+                  uri:'https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/15781332_1418375021559666_5183319178188037875_n.png?oh=e732f1565f70495dcdfb632f4ae167df&oe=5ABAE1AE'}} style={styles.thub}/>
             </View>
             <H1 style={styles.h1}>Fixter</H1>
             <Text style={styles.text}>contacto@fixter.org</Text>

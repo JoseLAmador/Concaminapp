@@ -13,7 +13,7 @@ export default class Menu extends Component {
       <Container style={styles.menu}>
         <View style={styles.viewImage}>
           <ImageBackground source={{
-              uri: 'http://www.visionindustrial.com.mx//wp-content/uploads/336d6e45001c603052accd6de4c50b60.jpg'
+              uri: 'https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/11011631_882175995175817_2682208415031668395_n.png?oh=f0359842e9eebb0ed898104e1050c6da&oe=5ACEDE36'
           }} style={styles.img} resizeMode={'contain'}
           >
           </ImageBackground>
@@ -22,7 +22,7 @@ export default class Menu extends Component {
 
           <TouchableOpacity style={styles.usuarioImagen} onPress={() => Actions.Perfil()}>
             <Image style={styles.usuario} source={{
-                uri:'http://talent-network.org/wp-content/uploads/2017/04/Fixter-logo.png'}}/>
+                uri:'https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/15781332_1418375021559666_5183319178188037875_n.png?oh=e732f1565f70495dcdfb632f4ae167df&oe=5ABAE1AE'}}/>
             <Text style={styles.text}>Fixter</Text>
           </TouchableOpacity>
 
