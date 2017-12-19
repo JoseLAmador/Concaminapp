@@ -18,22 +18,29 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
   var post = _ref.post;
   var image = post.image,
       text = post.text,
-      user = post.user;
+      username = post.username,
+      user_photo = post.user_photo;
 
+  var nImage = image;
+  if (nImage === null || nImage === undefined || nImage === '') {
+    nImage = "http://www.visionindustrial.com.mx//wp-content/uploads/336d6e45001c603052accd6de4c50b60.jpg";
+  } else {
+    nImage = image;
+  }
 
   return _react2.default.createElement(
     _reactNative.TouchableOpacity,
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 13
       }
     },
     _react2.default.createElement(
       _nativeBase.Card,
       { style: styles.card, __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 14
         }
       },
       _react2.default.createElement(
@@ -41,7 +48,7 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 11
+            lineNumber: 15
           }
         },
         _react2.default.createElement(
@@ -49,14 +56,14 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 16
             }
           },
-          _react2.default.createElement(_nativeBase.Thumbnail, { source: {
-              uri: "https://i.ytimg.com/vi/vHJPW8zo0og/hqdefault.jpg"
+          _react2.default.createElement(_nativeBase.Thumbnail, { small: true, source: {
+              uri: user_photo
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 13
+              lineNumber: 17
             }
           }),
           _react2.default.createElement(
@@ -64,18 +71,26 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 16
+                lineNumber: 20
               }
             },
             _react2.default.createElement(
               _reactNative.Text,
-              {
-                __source: {
+              { style: { fontWeight: 'bold', color: 'black', fontSize: 16 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 17
+                  lineNumber: 21
                 }
               },
-              user
+              username
+            ),
+            _react2.default.createElement(
+              _reactNative.Text,
+              { style: { fontSize: 12 }, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 22
+                }
+              },
+              '20 de diciembre'
             )
           )
         )
@@ -85,35 +100,16 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 21
-          }
-        },
-        _react2.default.createElement(_reactNative.Image, { source: {
-            uri: image
-          }, style: styles.img, resizeMode: 'contain', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22
-          }
-        })
-      ),
-      _react2.default.createElement(
-        _nativeBase.CardItem,
-        {
-          __source: {
-            fileName: _jsxFileName,
             lineNumber: 26
           }
         },
-        _react2.default.createElement(
-          _reactNative.Text,
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 27
-            }
-          },
-          text
-        )
+        _react2.default.createElement(_reactNative.Image, { source: {
+            uri: nImage
+          }, style: styles.img, resizeMode: 'contain', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+          }
+        })
       ),
       _react2.default.createElement(
         _nativeBase.CardItem,
@@ -124,61 +120,36 @@ var Cardd = exports.Cardd = function Cardd(_ref) {
           }
         },
         _react2.default.createElement(
-          _nativeBase.Left,
+          _reactNative.Text,
           {
             __source: {
               fileName: _jsxFileName,
               lineNumber: 32
             }
           },
-          _react2.default.createElement(
-            _nativeBase.Button,
-            { transparent: true, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 33
-              }
-            },
-            _react2.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', style: styles.icon, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 34
-              }
-            }),
-            _react2.default.createElement(
-              _reactNative.Text,
-              {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 35
-                }
-              },
-              '2 Comentarios'
-            )
-          )
-        ),
-        _react2.default.createElement(_nativeBase.Body, {
-          __source: {
+          text
+        )
+      ),
+      _react2.default.createElement(
+        _reactNative.View,
+        { style: { flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center' }, __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 36
+          }
+        },
+        _react2.default.createElement(_nativeBase.Icon, { active: true, name: 'chatbubbles', style: styles.icon, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37
           }
         }),
         _react2.default.createElement(
-          _nativeBase.Right,
-          {
-            __source: {
+          _reactNative.Text,
+          { style: { marginBottom: 10 }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 40
+              lineNumber: 38
             }
           },
-          _react2.default.createElement(
-            _reactNative.Text,
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 41
-              }
-            },
-            '35 minutos'
-          )
+          '2 Comentarios'
         )
       )
     )
@@ -190,8 +161,7 @@ exports.default = Cardd;
 
 var styles = _reactNative.StyleSheet.create({
   img: {
-    minHeight: 200,
-    maxHeight: 200,
+    minHeight: 100,
     width: '100%',
     flex: 1
   },
@@ -199,7 +169,10 @@ var styles = _reactNative.StyleSheet.create({
     flex: 0
   },
   icon: {
-    color: 'green',
-    margin: 5
+    color: "#0097A7",
+    paddingLeft: 17,
+    paddingRight: 5,
+    marginBottom: 10,
+    fontSize: 15
   }
 });

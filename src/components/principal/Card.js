@@ -1,26 +1,31 @@
 import React from 'react';
-import {Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
+import {Text, Image, TouchableOpacity, StyleSheet, View} from 'react-native';
 import {Card, CardItem, Thumbnail, Button, Icon, Left, Body, Right} from 'native-base';
 
 export const Cardd = ({post}) => {
-  const {image, text, user} = post;
+  const {image, text, username, user_photo} = post;
+  let nImage = image;
+  if (nImage ===null || nImage ===undefined || nImage ===''){
+    nImage="http://www.visionindustrial.com.mx//wp-content/uploads/336d6e45001c603052accd6de4c50b60.jpg"
+  }else{nImage=image}
 
   return (
     <TouchableOpacity>
       <Card style={styles.card}>
         <CardItem>
           <Left>
-            <Thumbnail source={{
-                uri: "https://i.ytimg.com/vi/vHJPW8zo0og/hqdefault.jpg"
+            <Thumbnail small source={{
+                uri: user_photo
               }}/>
             <Body>
-              <Text>{user}</Text>
+              <Text style={{fontWeight:'bold', color:'black', fontSize:16}}>{username}</Text>
+              <Text style={{fontSize:12}}>20 de diciembre</Text>
             </Body>
           </Left>
         </CardItem>
         <CardItem>
             <Image source={{
-                uri: image
+                uri: nImage
               }} style={styles.img} resizeMode={'contain'}/>
         </CardItem>
         <CardItem>
@@ -28,19 +33,12 @@ export const Cardd = ({post}) => {
               {text}
           </Text>
         </CardItem>
-        <CardItem>
-          <Left>
-            <Button transparent>
+        <View style={{flexDirection:'row', justifyContent:'flex-start', alignItems:'center'}}>
               <Icon active name="chatbubbles" style={styles.icon}/>
-              <Text>
+              <Text style={{marginBottom:10}}>
                 2 Comentarios</Text>
-            </Button>
-          </Left>
-          <Body/>
-          <Right>
-            <Text>35 minutos</Text>
-          </Right>
-        </CardItem>
+        </View>
+
       </Card>
     </TouchableOpacity>
   );
@@ -50,8 +48,7 @@ export default Cardd;
 
 const styles = StyleSheet.create({
   img: {
-    minHeight: 200,
-      maxHeight: 200,
+    minHeight: 100,
     width: '100%',
     flex: 1,
   },
@@ -59,7 +56,10 @@ const styles = StyleSheet.create({
     flex: 0
   },
   icon: {
-    color: 'green',
-    margin: 5
+    color: "#0097A7",
+    paddingLeft: 17,
+      paddingRight:5,
+      marginBottom:10,
+      fontSize:15
   }
 });

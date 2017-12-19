@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, Image, View, StyleSheet, ImageBackground, StatusBar} from 'react-native';
-import {Container, Content, CardItem, Right, Button, Body, Left, Icon, Thumbnail, Drawer, List, ListItem, Input} from 'native-base';
+import {Container, Content, CardItem, Right, Button, Body, Left, Icon, Thumbnail, Drawer, List, ListItem, Input, Spinner} from 'native-base';
 import Pie from './Pie';
 import {Actions} from 'react-native-router-flux';
 import Menu from './Menu';
@@ -11,6 +11,9 @@ import Card from './Card';
 import EncabezadoG from './EncabezadoG';
 
 class Grupos extends Component {
+    componentWillMount(){
+        this.props.postFetch()
+    }
   closeDrawer = () => {
     this.drawer._root.close()
   };
@@ -18,10 +21,20 @@ class Grupos extends Component {
   openDrawer = () => {
     this.drawer._root.open()
   };
+    fetched(){
+        if(!this.props.fetched){
+            return (
+                <View>
+                  <Spinner color={"#0097A7"}/>
+                  <Text style={{alignSelf:'center'}} >Cargando...</Text>
+                </View>
+            )
+        }
+    }
 
   render() {
     const {post} = this.props;
-      let filtrados = post.filter(f=>{return f.group});
+      let filtrados = post.filter(f=>{return f.organization});
     return (
       <Container>
         <Drawer ref={(ref) => {
@@ -38,7 +51,7 @@ class Grupos extends Component {
             <CardItem cardBody>
               <ImageBackground source={{
                   uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
-                }} style={styles.img}></ImageBackground>
+              }} style={styles.img}></ImageBackground>
             </CardItem>
             <View style={styles.miembros}>
 
@@ -57,8 +70,9 @@ class Grupos extends Component {
                 <Text>Crear Evento</Text>
               </View>
             </View>
+              {this.fetched()}
 
-            {/*<View>
+              {/*<View>
             <Card style={styles.post}>
               <ListItem avatar>
                 <Left>
@@ -76,11 +90,11 @@ class Grupos extends Component {
             </Card>
           </View>*/}
 
-            {
-              filtrados.reverse().map((post, index) => {
-                return <Card key={index} index={index} post={post}/>
-              })
-            }
+              {
+                  filtrados.reverse().map((post, index) => {
+                      return <Card key={index} index={index} post={post}/>
+                  })
+              }
 
           </Content>
         </Drawer>
@@ -96,7 +110,7 @@ const mapStateToProps = state => {
       uid
     };
   });
-  return {post}
+  return {post, fetched: post.length > 0}
 };
 
 export default connect(mapStateToProps, {postFetch})(Grupos);

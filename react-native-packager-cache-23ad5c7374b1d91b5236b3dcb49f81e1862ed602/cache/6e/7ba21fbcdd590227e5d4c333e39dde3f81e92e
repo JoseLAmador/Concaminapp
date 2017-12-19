@@ -95,6 +95,40 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
   }
 
   _createClass(Grupos, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.props.postFetch();
+    }
+  }, {
+    key: 'fetched',
+    value: function fetched() {
+      if (!this.props.fetched) {
+        return _react3.default.createElement(
+          _reactNative.View,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 27
+            }
+          },
+          _react3.default.createElement(_nativeBase.Spinner, { color: "#0097A7", __source: {
+              fileName: _jsxFileName,
+              lineNumber: 28
+            }
+          }),
+          _react3.default.createElement(
+            _reactNative.Text,
+            { style: { alignSelf: 'center' }, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 29
+              }
+            },
+            'Cargando...'
+          )
+        );
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
@@ -102,14 +136,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
       var post = this.props.post;
 
       var filtrados = post.filter(function (f) {
-        return f.group;
+        return f.organization;
       });
       return _react3.default.createElement(
         _nativeBase.Container,
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 26
+            lineNumber: 39
           }
         },
         _react3.default.createElement(
@@ -118,18 +152,18 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
               _this2.drawer = _ref2;
             }, content: _react3.default.createElement(_Menu2.default, { navigator: this.navigator, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 30
+                lineNumber: 43
               }
             }), onClose: function onClose() {
               return _this2.closeDrawer();
             }, __source: {
               fileName: _jsxFileName,
-              lineNumber: 27
+              lineNumber: 40
             }
           },
           _react3.default.createElement(_EncabezadoG2.default, { abrir: this.openDrawer, __source: {
               fileName: _jsxFileName,
-              lineNumber: 35
+              lineNumber: 48
             }
           }),
           _react3.default.createElement(
@@ -137,26 +171,26 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 36
+                lineNumber: 49
               }
             },
             _react3.default.createElement(_reactNative.StatusBar, { backgroundColor: '#0097A7', barStyle: 'light-content', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 37
+                lineNumber: 50
               }
             }),
             _react3.default.createElement(
               _nativeBase.CardItem,
               { cardBody: true, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 38
+                  lineNumber: 51
                 }
               },
               _react3.default.createElement(_reactNative.ImageBackground, { source: {
                   uri: 'http://blog.fixter.org/content/images/2017/04/firebaseM-1.jpg'
                 }, style: styles.img, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 39
+                  lineNumber: 52
                 }
               })
             ),
@@ -164,19 +198,19 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
               _reactNative.View,
               { style: styles.miembros, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 43
+                  lineNumber: 56
                 }
               },
               _react3.default.createElement(
                 _reactNative.View,
                 { style: styles.vnew, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 45
+                    lineNumber: 58
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'md-checkmark', style: styles.iconC, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 46
+                    lineNumber: 59
                   }
                 }),
                 _react3.default.createElement(
@@ -184,7 +218,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 47
+                      lineNumber: 60
                     }
                   },
                   'Miembro'
@@ -194,12 +228,12 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 _reactNative.View,
                 { style: styles.vnew, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 50
+                    lineNumber: 63
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'ios-people', style: styles.icons, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 51
+                    lineNumber: 64
                   }
                 }),
                 _react3.default.createElement(
@@ -207,7 +241,7 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 52
+                      lineNumber: 65
                     }
                   },
                   'Agregar Miembro'
@@ -217,14 +251,14 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                 _reactNative.View,
                 { style: styles.vnew, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 55
+                    lineNumber: 68
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'ios-calendar', style: styles.icons, onPress: function onPress() {
                     return _reactNativeRouterFlux.Actions.NuevoEvento();
                   }, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 56
+                    lineNumber: 69
                   }
                 }),
                 _react3.default.createElement(
@@ -232,17 +266,18 @@ var Grupos = _wrapComponent('Grupos')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 57
+                      lineNumber: 70
                     }
                   },
                   'Crear Evento'
                 )
               )
             ),
+            this.fetched(),
             filtrados.reverse().map(function (post, index) {
               return _react3.default.createElement(_Card2.default, { key: index, index: index, post: post, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 81
+                  lineNumber: 95
                 }
               });
             })
@@ -261,7 +296,7 @@ var mapStateToProps = function mapStateToProps(state) {
       uid: uid
     });
   });
-  return { post: post };
+  return { post: post, fetched: post.length > 0 };
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, { postFetch: _postActions.postFetch })(Grupos);
