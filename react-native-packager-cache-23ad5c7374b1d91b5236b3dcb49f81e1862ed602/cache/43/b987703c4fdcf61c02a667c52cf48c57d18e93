@@ -208,22 +208,14 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   }
                 },
                 _react3.default.createElement(
-                  _reactNative.View,
-                  { style: styles.viewBadge, __source: {
+                  _reactNative.Text,
+                  {
+                    __source: {
                       fileName: _jsxFileName,
                       lineNumber: 41
                     }
                   },
-                  _react3.default.createElement(
-                    _reactNative.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 42
-                      }
-                    },
-                    '12'
-                  )
+                  '12'
                 )
               )
             ),
@@ -233,7 +225,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   return _reactNativeRouterFlux.Actions.Eventos();
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 46
+                  lineNumber: 44
                 }
               },
               _react3.default.createElement(
@@ -241,12 +233,12 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 47
+                    lineNumber: 45
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'ios-calendar', style: styles.iconColor, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 48
+                    lineNumber: 46
                   }
                 })
               ),
@@ -255,7 +247,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 50
+                    lineNumber: 48
                   }
                 },
                 _react3.default.createElement(
@@ -263,7 +255,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 51
+                      lineNumber: 49
                     }
                   },
                   'Eventos'
@@ -274,26 +266,18 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 53
+                    lineNumber: 51
                   }
                 },
                 _react3.default.createElement(
-                  _reactNative.View,
-                  { style: styles.viewBadge, __source: {
+                  _reactNative.Text,
+                  {
+                    __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 54
+                      lineNumber: 52
                     }
                   },
-                  _react3.default.createElement(
-                    _reactNative.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 55
-                      }
-                    },
-                    '2'
-                  )
+                  '2'
                 )
               )
             ),
@@ -301,7 +285,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
               _nativeBase.ListItem,
               { icon: true, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 59
+                  lineNumber: 55
                 }
               },
               _react3.default.createElement(
@@ -309,12 +293,12 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 60
+                    lineNumber: 56
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'person', style: styles.iconColor, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 61
+                    lineNumber: 57
                   }
                 })
               ),
@@ -323,7 +307,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 63
+                    lineNumber: 59
                   }
                 },
                 _react3.default.createElement(
@@ -331,7 +315,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 64
+                      lineNumber: 60
                     }
                   },
                   'Amigos'
@@ -340,7 +324,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
               _react3.default.createElement(_nativeBase.Right, {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 66
+                  lineNumber: 62
                 }
               })
             )
@@ -350,14 +334,14 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 70
+                lineNumber: 66
               }
             },
             _react3.default.createElement(
               _nativeBase.ListItem,
               { itemDivider: true, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 71
+                  lineNumber: 67
                 }
               },
               _react3.default.createElement(
@@ -365,7 +349,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 72
+                    lineNumber: 68
                   }
                 },
                 'GRUPOS'
@@ -377,7 +361,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   return _reactNativeRouterFlux.Actions.Grupos();
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 74
+                  lineNumber: 70
                 }
               },
               _react3.default.createElement(
@@ -385,12 +369,12 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 75
+                    lineNumber: 71
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'bulb', style: styles.iconColor, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 76
+                    lineNumber: 72
                   }
                 })
               ),
@@ -399,7 +383,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 78
+                    lineNumber: 74
                   }
                 },
                 _react3.default.createElement(
@@ -407,7 +391,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 79
+                      lineNumber: 75
                     }
                   },
                   'Fixter-Comunidad'
@@ -418,26 +402,18 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 81
+                    lineNumber: 77
                   }
                 },
                 _react3.default.createElement(
-                  _reactNative.View,
-                  { style: styles.viewBadge, __source: {
+                  _reactNative.Text,
+                  {
+                    __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 82
+                      lineNumber: 78
                     }
                   },
-                  _react3.default.createElement(
-                    _reactNative.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 83
-                      }
-                    },
-                    '2'
-                  )
+                  '2'
                 )
               )
             ),
@@ -445,7 +421,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
               _nativeBase.ListItem,
               { icon: true, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 87
+                  lineNumber: 81
                 }
               },
               _react3.default.createElement(
@@ -453,12 +429,12 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 88
+                    lineNumber: 82
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'ios-microphone', style: styles.iconColor, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 89
+                    lineNumber: 83
                   }
                 })
               ),
@@ -467,7 +443,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 91
+                    lineNumber: 85
                   }
                 },
                 _react3.default.createElement(
@@ -475,7 +451,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 92
+                      lineNumber: 86
                     }
                   },
                   'VectorBr'
@@ -484,7 +460,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
               _react3.default.createElement(_nativeBase.Right, {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 94
+                  lineNumber: 88
                 }
               })
             ),
@@ -492,7 +468,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
               _nativeBase.ListItem,
               { icon: true, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 96
+                  lineNumber: 90
                 }
               },
               _react3.default.createElement(
@@ -500,12 +476,12 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 97
+                    lineNumber: 91
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'pizza', style: styles.iconColor, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 98
+                    lineNumber: 92
                   }
                 })
               ),
@@ -514,7 +490,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 100
+                    lineNumber: 94
                   }
                 },
                 _react3.default.createElement(
@@ -522,7 +498,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 101
+                      lineNumber: 95
                     }
                   },
                   'Lol-Pachuca'
@@ -533,26 +509,18 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 103
+                    lineNumber: 97
                   }
                 },
                 _react3.default.createElement(
-                  _reactNative.View,
-                  { style: styles.viewBadge, __source: {
+                  _reactNative.Text,
+                  {
+                    __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 104
+                      lineNumber: 98
                     }
                   },
-                  _react3.default.createElement(
-                    _reactNative.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 105
-                      }
-                    },
-                    '12'
-                  )
+                  '12'
                 )
               )
             ),
@@ -560,7 +528,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
               _nativeBase.ListItem,
               { icon: true, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 109
+                  lineNumber: 101
                 }
               },
               _react3.default.createElement(
@@ -568,12 +536,12 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 110
+                    lineNumber: 102
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'nutrition', style: styles.iconColor, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 111
+                    lineNumber: 103
                   }
                 })
               ),
@@ -582,7 +550,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 113
+                    lineNumber: 105
                   }
                 },
                 _react3.default.createElement(
@@ -590,7 +558,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 114
+                      lineNumber: 106
                     }
                   },
                   'Fit&Geek'
@@ -601,26 +569,18 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 116
+                    lineNumber: 108
                   }
                 },
                 _react3.default.createElement(
-                  _reactNative.View,
-                  { style: styles.viewBadge, __source: {
+                  _reactNative.Text,
+                  {
+                    __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 117
+                      lineNumber: 109
                     }
                   },
-                  _react3.default.createElement(
-                    _reactNative.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 118
-                      }
-                    },
-                    '1'
-                  )
+                  '1'
                 )
               )
             ),
@@ -628,7 +588,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
               _nativeBase.ListItem,
               { icon: true, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 122
+                  lineNumber: 112
                 }
               },
               _react3.default.createElement(
@@ -636,12 +596,12 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 123
+                    lineNumber: 113
                   }
                 },
                 _react3.default.createElement(_nativeBase.Icon, { name: 'beer', style: styles.iconColor, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 124
+                    lineNumber: 114
                   }
                 })
               ),
@@ -650,7 +610,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 126
+                    lineNumber: 116
                   }
                 },
                 _react3.default.createElement(
@@ -658,7 +618,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 127
+                      lineNumber: 117
                     }
                   },
                   'MarioKart'
@@ -669,26 +629,18 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 129
+                    lineNumber: 119
                   }
                 },
                 _react3.default.createElement(
-                  _reactNative.View,
-                  { style: styles.viewBadge, __source: {
+                  _reactNative.Text,
+                  {
+                    __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 130
+                      lineNumber: 120
                     }
                   },
-                  _react3.default.createElement(
-                    _reactNative.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 131
-                      }
-                    },
-                    '22'
-                  )
+                  '22'
                 )
               )
             ),
@@ -698,7 +650,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                   return _this2.signOut();
                 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 135
+                  lineNumber: 123
                 }
               },
               _react3.default.createElement(
@@ -706,7 +658,7 @@ var Menu = _wrapComponent('Menu')(function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 136
+                    lineNumber: 124
                   }
                 },
                 'Cerrar Sesi\xF3n'
@@ -756,7 +708,7 @@ var styles = _reactNative.StyleSheet.create({
     backgroundColor: 'white'
   },
   iconColor: {
-    color: 'green'
+    color: '#ccc'
   },
   viewImage: {
     minHeight: 135,

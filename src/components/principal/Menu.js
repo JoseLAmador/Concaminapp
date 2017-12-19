@@ -38,9 +38,7 @@ export default class Menu extends Component {
                 <Text>Más recientes</Text>
               </Body>
               <Right>
-                <View style={styles.viewBadge}>
                   <Text>12</Text>
-                </View>
               </Right>
             </ListItem>
             <ListItem icon onPress={() => Actions.Eventos()}>
@@ -51,9 +49,7 @@ export default class Menu extends Component {
                 <Text>Eventos</Text>
               </Body>
               <Right>
-                <View style={styles.viewBadge}>
                   <Text>2</Text>
-                </View>
               </Right>
             </ListItem>
             <ListItem icon >
@@ -79,9 +75,7 @@ export default class Menu extends Component {
                 <Text>Fixter-Comunidad</Text>
               </Body>
               <Right>
-              <View style={styles.viewBadge}>
                   <Text>2</Text>
-              </View>
               </Right>
             </ListItem>
             <ListItem icon>
@@ -101,9 +95,7 @@ export default class Menu extends Component {
                 <Text>Lol-Pachuca</Text>
               </Body>
               <Right>
-                <View style={styles.viewBadge}>
                   <Text>12</Text>
-                </View>
               </Right>
             </ListItem>
             <ListItem icon>
@@ -114,9 +106,7 @@ export default class Menu extends Component {
                 <Text>Fit&Geek</Text>
               </Body>
               <Right>
-                <View style={styles.viewBadge}>
                   <Text>1</Text>
-                </View>
               </Right>
             </ListItem>
             <ListItem icon>
@@ -127,9 +117,7 @@ export default class Menu extends Component {
                 <Text>MarioKart</Text>
               </Body>
               <Right>
-                <View style={styles.viewBadge}>
                   <Text>22</Text>
-                </View>
               </Right>
             </ListItem>
             <ListItem onPress={()=>this.signOut()} >
@@ -175,7 +163,7 @@ const styles = StyleSheet.create({
       backgroundColor:'white'
     },
     iconColor:{
-      color:'green',
+      color:'#ccc',
     },
     viewImage:{
         minHeight:135,

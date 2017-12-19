@@ -152,13 +152,13 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   iconC: {
-    color: 'green',
+    color: '#ccc',
     fontSize: 34,
     fontWeight: 'bold',
     alignSelf: 'center'
   },
   icons: {
-    color: 'green',
+    color: '#ccc',
     fontSize: 34,
     alignSelf: 'center'
   }
